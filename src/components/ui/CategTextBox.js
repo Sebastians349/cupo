@@ -4,7 +4,9 @@ import { Stack, Text } from '@chakra-ui/layout';
 const CategTextBox = props => {
   return (
     <Stack>
-      <Text>{props.children}</Text>
+      <Text borderWidth="thick" borderColor="twitter.100">
+        {props.children}
+      </Text>
     </Stack>
   );
 };
