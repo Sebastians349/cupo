@@ -5,6 +5,7 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Header from './components/ui/containers/Header';
 import Bienvenida from './components/ui/Bienvenida';
 import Nav from './components/ui/Nav';
+import Categorias from './components/ui/pages/Categorias';
 
 function App() {
   return (
@@ -17,8 +18,7 @@ function App() {
         </HStack>
       </Flex>
       <Bienvenida />
-      {/* <Main />
-    <Footer /> */}
+      <Categorias />
     </ChakraProvider>
   );
 }

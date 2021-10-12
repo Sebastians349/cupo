@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box } from '@chakra-ui/layout';
+import { Box, Center } from '@chakra-ui/layout';
+import { Image } from '@chakra-ui/image';
 
 const Bienvenida = () => {
   return (
@@ -10,9 +11,13 @@ const Bienvenida = () => {
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
-      opacity="0.5"
-      minH="90vh"
-    ></Box>
+      opacity="0.6"
+      minH="100vh"
+    >
+      <Center>
+        <Image src="logocupog500.png " opacity="1"></Image>
+      </Center>
+    </Box>
   );
 };
 
