@@ -3,16 +3,16 @@ import { Stack } from '@chakra-ui/layout';
 import { SimpleGrid } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 
-const Categorias = props => {
+const Categorias = () => {
   return (
-    <Stack minH="100vh" bgColor="whitesmoke" p={2}>
-      <SimpleGrid columns={[2, null, 3]} spacing="40px">
-        <CategBox categ="alimentos" />
-        <CategBox categ="indumentaria" />
-        <CategBox categ="compras" />
-        <CategBox categ="gastronomia" />
-        <CategBox categ="actividades" />
-        <CategBox categ="otros rubros" />
+    <Stack minH="80vh" p={5}>
+      <SimpleGrid minChildWidth="420px" spacing="40px">
+        <CategBox categ="alimentos" foto="alim.png" />
+        <CategBox categ="indumentaria" foto="indu.jpg" />
+        <CategBox categ="compras" foto="compras.jpg" />
+        <CategBox categ="gastronomia" foto="gastro.jpg" />
+        <CategBox categ="actividades" foto="acti.jpg" />
+        <CategBox categ="otros rubros" foto="otros.jpg" />
       </SimpleGrid>
     </Stack>
   );

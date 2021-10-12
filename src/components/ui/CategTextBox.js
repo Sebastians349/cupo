@@ -1,11 +1,22 @@
 import React from 'react';
-import { Stack, Text } from '@chakra-ui/layout';
+import { Stack, Text, Link } from '@chakra-ui/layout';
 
-const CategTextBox = props => {
+const CategTextBox = (props) => {
   return (
     <Stack>
-      <Text borderWidth="thick" borderColor="twitter.100">
-        {props.children}
+      <Text
+        borderWidth="thick"
+        rounded="sm"
+        borderColor="whiteAlpha.900"
+        p={2}
+        mt="24"
+        color="white"
+        opacity="0.7"
+        textTransform="uppercase"
+        fontWeight="bold"
+        fontSize="xl"
+      >
+        <Link>{props.children}</Link>
       </Text>
     </Stack>
   );
