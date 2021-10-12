@@ -1,15 +1,20 @@
 import React from 'react';
 import { ChakraProvider, Flex, theme } from '@chakra-ui/react';
+import { HStack } from '@chakra-ui/layout';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Header from './components/ui/containers/Header';
 import Bienvenida from './components/ui/Bienvenida';
+import Nav from './components/ui/Nav';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Flex justify="space-between" boxShadow="xs" p={1}>
         <Header />
-        <ColorModeSwitcher justifySelf="flex-end" />
+        <HStack>
+          <Nav />
+          <ColorModeSwitcher justifySelf="flex-end" />
+        </HStack>
       </Flex>
       <Bienvenida />
       {/* <Main />
