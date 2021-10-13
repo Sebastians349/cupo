@@ -8,6 +8,8 @@ import Nav from './components/ui/Nav';
 import Categorias from './components/ui/pages/Categorias';
 import Ofertas from './components/ui/pages/Ofertas';
 import Faq from './components/ui/pages/Faq';
+import Contacto from './components/ui/pages/Contacto';
+import Footer from './components/ui/containers/Footer';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Categorias />
       <Ofertas />
       <Faq />
+      <Contacto />
+      <Footer />
     </ChakraProvider>
   );
 }
