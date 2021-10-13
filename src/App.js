@@ -3,9 +3,10 @@ import { ChakraProvider, Flex, theme } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/layout';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Header from './components/ui/containers/Header';
-import Bienvenida from './components/ui/Bienvenida';
+import Bienvenida from './components/ui/pages/Bienvenida';
 import Nav from './components/ui/Nav';
 import Categorias from './components/ui/pages/Categorias';
+import Ofertas from './components/ui/pages/Ofertas';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       </Flex>
       <Bienvenida />
       <Categorias />
+      <Ofertas />
     </ChakraProvider>
   );
 }

@@ -7,11 +7,10 @@ const CategTextBox = (props) => {
       <Text
         borderWidth="thick"
         rounded="sm"
-        borderColor="whiteAlpha.900"
+        borderColor="white"
         p={2}
         mt="24"
         color="white"
-        opacity="0.7"
         textTransform="uppercase"
         fontWeight="bold"
         fontSize="xl"

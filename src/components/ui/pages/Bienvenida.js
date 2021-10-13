@@ -1,0 +1,24 @@
+import React from 'react';
+import { Box, Center } from '@chakra-ui/layout';
+import { Image } from '@chakra-ui/image';
+
+const Bienvenida = () => {
+  return (
+    <Box
+      textAlign="center"
+      fontSize="xl"
+      bgImage="url('index.jpg')"
+      bgPosition="center"
+      bgRepeat="no-repeat"
+      bgSize="cover"
+      opacity="0.6"
+      minH="100vh"
+    >
+      <Center>
+        <Image src="logocupog500.png " opacity="1"></Image>
+      </Center>
+    </Box>
+  );
+};
+
+export default Bienvenida;

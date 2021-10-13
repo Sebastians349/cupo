@@ -5,7 +5,7 @@ import LogoHeader from '../LogoHeader';
 const Header = () => {
   return (
     <HStack>
-      <LogoHeader />
+      <LogoHeader titulo="cupoghlan" />
     </HStack>
   );
 };
