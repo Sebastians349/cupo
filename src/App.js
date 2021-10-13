@@ -7,6 +7,7 @@ import Bienvenida from './components/ui/pages/Bienvenida';
 import Nav from './components/ui/Nav';
 import Categorias from './components/ui/pages/Categorias';
 import Ofertas from './components/ui/pages/Ofertas';
+import Faq from './components/ui/pages/Faq';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Bienvenida />
       <Categorias />
       <Ofertas />
+      <Faq />
     </ChakraProvider>
   );
 }
