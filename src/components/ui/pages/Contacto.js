@@ -1,13 +1,12 @@
+import React from 'react';
 import {
   VStack,
   Stack,
   Heading,
   Center,
   Divider,
-  Text,
   Spacer,
 } from '@chakra-ui/layout';
-import React from 'react';
 
 const Contacto = () => {
   return (

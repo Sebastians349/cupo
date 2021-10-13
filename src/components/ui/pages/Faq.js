@@ -1,5 +1,5 @@
-import { Stack } from '@chakra-ui/layout';
 import React from 'react';
+import { Stack, Center } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
 import {
   Accordion,
@@ -12,8 +12,10 @@ import {
 
 const Faq = () => {
   return (
-    <Box h="100vh" p={2}>
-      <LogoHeader titulo="FAQ" />
+    <Stack h="100vh" p={2}>
+      <Center>
+        <LogoHeader titulo="FAQ" />
+      </Center>
       <Accordion p={2}>
         <AccordionItem>
           <h2>
@@ -49,7 +51,7 @@ const Faq = () => {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-    </Box>
+    </Stack>
   );
 };
 

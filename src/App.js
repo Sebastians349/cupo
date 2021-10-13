@@ -10,6 +10,7 @@ import Ofertas from './components/ui/pages/Ofertas';
 import Faq from './components/ui/pages/Faq';
 import Contacto from './components/ui/pages/Contacto';
 import Footer from './components/ui/containers/Footer';
+import Sponsors from './components/ui/pages/Sponsors';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Ofertas />
       <Faq />
       <Contacto />
+      <Sponsors />
       <Footer />
     </ChakraProvider>
   );

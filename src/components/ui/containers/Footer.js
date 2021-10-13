@@ -1,7 +1,9 @@
 import React from 'react';
-import { Stack, Text } from '@chakra-ui/react';
+import { Stack } from '@chakra-ui/react';
 import SocialsList from '../SocialsList';
 import Seba from '../Seba';
+import LogoHeader from '../LogoHeader';
+
 const Footer = () => {
   return (
     <Stack
@@ -13,6 +15,7 @@ const Footer = () => {
       align="center"
     >
       <SocialsList />
+      <LogoHeader />
       <Seba />
     </Stack>
   );
