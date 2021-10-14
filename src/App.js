@@ -2,6 +2,8 @@ import React from 'react';
 import { ChakraProvider, Flex, theme } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/layout';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { Route, Switch } from 'react-router-dom';
+
 import Header from './components/ui/containers/Header';
 import Bienvenida from './components/ui/pages/Bienvenida';
 import Nav from './components/ui/Nav';
@@ -22,12 +24,25 @@ function App() {
           <ColorModeSwitcher justifySelf="flex-end" />
         </HStack>
       </Flex>
-      <Bienvenida />
-      <Categorias />
-      <Ofertas />
-      <Faq />
-      <Contacto />
-      <Sponsors />
+      <Switch>
+        {/* <Route path="/Bienvenida">
+          <Bienvenida />
+        </Route> */}
+        <Route path="/Categorias">
+          <Categorias />
+        </Route>
+        <Route path="/Ofertas">
+          <Ofertas />
+        </Route>
+        <Route path="/Faq">
+          <Faq />
+        </Route>
+        <Route path="/Contacto">
+          <Contacto />
+        </Route>
+        <Bienvenida />
+        <Sponsors />
+      </Switch>
       <Footer />
     </ChakraProvider>
   );

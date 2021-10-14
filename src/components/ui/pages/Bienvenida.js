@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Center } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
+import { Link } from '@chakra-ui/react';
+import { Link as ReachLink } from 'react-router-dom';
 
 const Bienvenida = () => {
   return (
@@ -15,7 +17,9 @@ const Bienvenida = () => {
       minH="100vh"
     >
       <Center>
-        <Image src="logocupog500.png " opacity="1"></Image>
+        <Link as={ReachLink} to="/Categorias">
+          <Image src="logocupog500.png " opacity="1"></Image>
+        </Link>
       </Center>
     </Box>
   );
