@@ -5,15 +5,17 @@ const CategTextBox = (props) => {
   return (
     <Stack>
       <Text
-        borderWidth="thick"
+        borderWidth="medium"
         rounded="sm"
         borderColor="white"
         p={2}
         mt="24"
         color="white"
         textTransform="uppercase"
-        fontWeight="bold"
+        fontWeight="black"
         fontSize="xl"
+        textShadow="1px 1px  #000"
+        opacity="0.9"
       >
         <Link>{props.children}</Link>
       </Text>

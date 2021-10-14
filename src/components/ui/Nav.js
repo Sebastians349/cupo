@@ -1,13 +1,28 @@
 import React from 'react';
 import { Link, Stack } from '@chakra-ui/layout';
+import { Link as ReachLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <Stack direction={['column', 'row']}>
-      <Link>categorias</Link>
-      <Link>ofertas</Link>
-      <Link>faq</Link>
-      <Link>contacto</Link>
+    <Stack
+      direction={['column', 'row']}
+      textTransform="uppercase"
+      fontSize="sm"
+      fontWeight="semibold"
+    >
+      <Link as={ReachLink} to="/Categorias" _hover={{ background: 'teal' }}>
+        {/* COLORES DARK/LIGHT MODE */}
+        Categorias
+      </Link>
+      <Link as={ReachLink} to="/Ofertas">
+        Ofertas
+      </Link>
+      <Link as={ReachLink} to="/Faq">
+        Faq
+      </Link>
+      <Link as={ReachLink} to="/Contacto">
+        Contacto
+      </Link>
     </Stack>
   );
 };
