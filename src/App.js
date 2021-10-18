@@ -3,7 +3,6 @@ import { ChakraProvider, Flex, theme } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/layout';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Route, Switch } from 'react-router-dom';
-
 import Header from './components/ui/containers/Header';
 import Bienvenida from './components/ui/pages/Bienvenida';
 import Nav from './components/ui/Nav';
@@ -13,6 +12,12 @@ import Faq from './components/ui/pages/Faq';
 import Contacto from './components/ui/pages/Contacto';
 import Footer from './components/ui/containers/Footer';
 import Sponsors from './components/ui/pages/Sponsors';
+import CatAlimentos from './components/ui/pages/CatAlimentos';
+import CatCompras from './components/ui/pages/CatCompras';
+import CatIndum from './components/ui/pages/CatIndum';
+import CatGastro from './components/ui/pages/CatGastro';
+import CatActiv from './components/ui/pages/CatActiv';
+import CatOtros from './components/ui/pages/CatOtros';
 
 function App() {
   return (
@@ -39,6 +44,24 @@ function App() {
         </Route>
         <Route path="/Contacto">
           <Contacto />
+        </Route>
+        <Route path="/CatAlimentos">
+          <CatAlimentos />
+        </Route>
+        <Route path="/CatCompras">
+          <CatCompras />
+        </Route>
+        <Route path="/CatIndum">
+          <CatIndum />
+        </Route>
+        <Route path="/CatGastro">
+          <CatGastro />
+        </Route>
+        <Route path="/CatActiv">
+          <CatActiv />
+        </Route>
+        <Route path="/CatOtros">
+          <CatOtros />
         </Route>
         <Bienvenida />
         <Sponsors />

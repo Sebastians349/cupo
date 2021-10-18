@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stack, Text, Link } from '@chakra-ui/layout';
 
-const CategTextBox = (props) => {
+const CategTextBox = props => {
   return (
     <Stack>
       <Text
@@ -17,7 +17,9 @@ const CategTextBox = (props) => {
         textShadow="1px 1px  #000"
         opacity="0.9"
       >
-        <Link>{props.children}</Link>
+        {/* FIX CHECK cambie el link q era inutil
+        pero hace un hover raro en la sombra del texto  */}
+        <Text>{props.children}</Text>
       </Text>
     </Stack>
   );
