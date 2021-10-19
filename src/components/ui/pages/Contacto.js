@@ -11,7 +11,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 
 const Contacto = () => {
   return (
-    <Stack h="100vh">
+    <Stack h="100vh" p={5}>
       <Breadcrumb>
         <BreadcrumbItem>
           <BreadcrumbLink href="/Home">Home</BreadcrumbLink>
@@ -21,7 +21,7 @@ const Contacto = () => {
         </BreadcrumbItem>
       </Breadcrumb>
       <Center>
-        <VStack>
+        <VStack p={5}>
           <Heading as="h1" size="3xl">
             CONTACTO
           </Heading>

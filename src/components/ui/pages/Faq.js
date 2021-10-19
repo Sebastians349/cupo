@@ -15,7 +15,7 @@ import {
 
 const Faq = () => {
   return (
-    <Stack h="100vh" p={2}>
+    <Stack h="100vh" p={5}>
       <Breadcrumb>
         <BreadcrumbItem>
           <BreadcrumbLink href="/Home">Home</BreadcrumbLink>

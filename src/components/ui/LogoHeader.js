@@ -4,7 +4,7 @@ import { Image } from '@chakra-ui/image';
 
 const LogoHeader = (props) => {
   return (
-    <HStack>
+    <HStack p={1}>
       <Image src="logo50l.png" fallbackSrc="https://via.placeholder.com/50" />
       <Heading size="sm" textTransform="uppercase">
         {props.titulo}
