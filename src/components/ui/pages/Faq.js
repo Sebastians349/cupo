@@ -8,11 +8,22 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
 } from '@chakra-ui/react';
 
 const Faq = () => {
   return (
     <Stack h="100vh" p={2}>
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <BreadcrumbLink href="/Home">Home</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink href="#">Faq</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
       <Center>
         <LogoHeader titulo="FAQ" />
       </Center>

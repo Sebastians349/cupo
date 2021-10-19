@@ -7,7 +7,7 @@ import Header from './components/ui/containers/Header';
 import Bienvenida from './components/ui/pages/Bienvenida';
 import Nav from './components/ui/Nav';
 import Categorias from './components/ui/pages/Categorias';
-import Ofertas from './components/ui/pages/Ofertas';
+import Destacados from './components/ui/pages/Destacados';
 import Faq from './components/ui/pages/Faq';
 import Contacto from './components/ui/pages/Contacto';
 import Footer from './components/ui/containers/Footer';
@@ -36,8 +36,8 @@ function App() {
         <Route path="/Categorias">
           <Categorias />
         </Route>
-        <Route path="/Ofertas">
-          <Ofertas />
+        <Route path="/Destacados">
+          <Destacados />
         </Route>
         <Route path="/Faq">
           <Faq />

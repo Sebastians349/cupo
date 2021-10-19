@@ -4,10 +4,19 @@ import { SimpleGrid, Center } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 
 const Categorias = () => {
   return (
     <Stack minH="80vh" p={5}>
+      <Breadcrumb>
+        <BreadcrumbItem>
+          <BreadcrumbLink href="/Home">Home</BreadcrumbLink>
+        </BreadcrumbItem>
+        <BreadcrumbItem isCurrentPage>
+          <BreadcrumbLink href="#">Categorias</BreadcrumbLink>
+        </BreadcrumbItem>
+      </Breadcrumb>
       <Center>
         <LogoHeader titulo="categorías" />
       </Center>

@@ -14,8 +14,8 @@ const Nav = () => {
         {/* COLORES DARK/LIGHT MODE */}
         Categorias
       </Link>
-      <Link as={ReachLink} to="/Ofertas">
-        Ofertas
+      <Link as={ReachLink} to="/Destacados">
+        Destacados
       </Link>
       <Link as={ReachLink} to="/Faq">
         Faq

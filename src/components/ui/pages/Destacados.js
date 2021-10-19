@@ -2,13 +2,13 @@ import React from 'react';
 import { Box, SimpleGrid, Center } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
 
-const Ofertas = () => {
+const Destacados = () => {
   return (
     <Box p={3}>
       <Center>
-        <LogoHeader titulo="ofertas" />
+        <LogoHeader titulo="Destacados" />
       </Center>
-      <SimpleGrid minChildWidth="100px" spacing="10px" p={1} mt={3}>
+      <SimpleGrid minChildWidth="150px" spacing="10px" p={1} mt={3}>
         <Box bgColor="red.100" height="100px" />
         <Box bgColor="red.100" height="100px" />
         <Box bgColor="red.100" height="100px" />
@@ -56,4 +56,4 @@ const Ofertas = () => {
   );
 };
 
-export default Ofertas;
+export default Destacados;
