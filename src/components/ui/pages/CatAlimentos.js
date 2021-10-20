@@ -5,8 +5,9 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
 } from '@chakra-ui/breadcrumb';
+import { Container } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
-import BoxSubCat from '../BoxSubCat';
+import PruebaBox from '../PruebaBox';
 
 const CatAlimentos = () => {
   return (
@@ -25,34 +26,38 @@ const CatAlimentos = () => {
       <Center>
         <LogoHeader titulo="Alimentos" />
       </Center>
-      <SimpleGrid minChildWidth="100px" spacing="10px" p={1} mt={3}>
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-        <BoxSubCat />
-      </SimpleGrid>
+      <Container maxW="container.xl">
+        <SimpleGrid minChildWidth="125px" spacing="10px" mt={3}>
+          <PruebaBox nombre="La Aldea" />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+          <PruebaBox />
+        </SimpleGrid>
+      </Container>
     </Box>
   );
 };
