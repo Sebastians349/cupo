@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Link } from '@chakra-ui/layout';
+import { Stack, Link, Spacer } from '@chakra-ui/layout';
 import { SimpleGrid, Center } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
@@ -41,6 +41,7 @@ const Categorias = () => {
           <CategBox categ="otros rubros" foto="otros.jpg" />
         </Link>
       </SimpleGrid>
+      <Spacer />
     </Stack>
   );
 };
