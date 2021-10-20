@@ -15,9 +15,9 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  Lorem,
 } from '@chakra-ui/react';
-import faker from 'faker';
+import Redes from './Redes';
+// import faker from 'faker';
 
 const PruebaBox = props => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -55,27 +55,38 @@ const PruebaBox = props => {
               onClose={onClose}
               closeOnOverlayClick={false}
               isCentered
-              size="md"
+              size="xl"
             >
               <ModalOverlay />
               <ModalContent>
-                <Center>
-                  <ModalHeader textAlign="center">{props.nombre}</ModalHeader>
-                </Center>
+                <ModalHeader textAlign="center">{props.nombre}</ModalHeader>
                 <ModalCloseButton />
                 <ModalBody>
                   <Center>
                     <Image
                       borderRadius="full"
                       boxSize="70px"
+                      mb="5"
                       src={props.logo}
                       alt="logo de comercio"
                       fallbackSrc="https://via.placeholder.com/50"
                     />
                   </Center>
+                  <Text textAlign="center">
+                    25 % OFF NOMBRANDO A CUPOGHLAN*
+                  </Text>
+                  <Text mt="1" textAlign="center" fontSize="xx-small">
+                    Promoción válida solo en efectivo{' '}
+                  </Text>
                 </ModalBody>
                 <Center>
-                  <ModalFooter fontSize="xs">nombre local</ModalFooter>
+                  <ModalFooter
+                    fontSize="xs"
+                    fontWeight="semibold"
+                    textTransform="uppercase"
+                  >
+                    <Redes name="" />
+                  </ModalFooter>
                 </Center>
               </ModalContent>
             </Modal>
