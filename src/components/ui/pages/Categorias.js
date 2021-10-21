@@ -5,6 +5,7 @@ import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
+import Example from '../../Example';
 
 const Categorias = () => {
   return (
@@ -17,10 +18,11 @@ const Categorias = () => {
           <BreadcrumbLink href="#">Categorias</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
-
+      <Spacer />
       {/* Carrousel */}
-      {/* Carrousel */}
 
+      <Example />
+      {/* Carrousel */}
       <Center pb="3">
         <LogoHeader titulo="categorías" />
       </Center>
