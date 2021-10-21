@@ -17,7 +17,8 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import Redes from './Redes';
-// import faker from 'faker';
+import faker from 'faker/locale/ar';
+
 // TODO CAMBIAR EL NOMBRE AL COMPO PORQUE ME CONFUNDE SIEMPRE
 
 const PruebaBox = props => {
@@ -39,14 +40,15 @@ const PruebaBox = props => {
         rounded="md"
       >
         <Box p="2">
-          <Center minH="50px">
-            <Button minH="50px" variant="transparent">
+          <Center minH="150px">
+            <Button minH="150px" variant="transparent">
               <Image
                 borderRadius="full"
-                boxSize="50px"
-                src={props.logo}
+                boxSize="100px"
+                // src={props.logo}
+                src={faker.image.avatar()}
                 alt="logo del comercio"
-                fallbackSrc="https://via.placeholder.com/50"
+                fallbackSrc="https://via.placeholder.com/100"
               />
             </Button>
             {/*    //////// MODAL////////

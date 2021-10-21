@@ -8,6 +8,7 @@ import {
 import { Container } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
 import PruebaBox from '../PruebaBox';
+import faker from 'faker';
 
 const CatAlimentos = () => {
   return (
@@ -27,35 +28,31 @@ const CatAlimentos = () => {
         <LogoHeader titulo="Alimentos" />
       </Center>
       <Container maxW="container.xl">
-        <SimpleGrid minChildWidth="125px" spacing="10px" mt={3}>
+        <SimpleGrid minChildWidth="175px" spacing="10px" mt={3}>
           <PruebaBox nombre="La Aldea" />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre={faker.random.word()} />
         </SimpleGrid>
       </Container>
     </Box>
