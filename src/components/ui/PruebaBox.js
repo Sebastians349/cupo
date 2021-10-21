@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react';
 import Redes from './Redes';
 // import faker from 'faker';
+// TODO CAMBIAR EL NOMBRE AL COMPO PORQUE ME CONFUNDE SIEMPRE
 
 const PruebaBox = props => {
   const { isOpen, onOpen, onClose } = useDisclosure();
