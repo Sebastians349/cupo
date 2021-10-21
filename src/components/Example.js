@@ -12,7 +12,7 @@ const style = {
   width: '50%',
   minHeight: '50%',
   bgcolor: 'background.paper',
-  //   border: '1px solid #000',
+  borderRadius: 4,
   boxShadow: 48,
   textAlign: 'center',
   p: 4,
@@ -77,6 +77,7 @@ function Item(props) {
         <Button onClick={handleOpen}>
           ¡CLICKEÁ PARA VER LA OFERTA DESTACADA!
         </Button>
+        {/*  ////////// MODAL //////  */}
         <Modal
           open={open}
           onClose={handleClose}
@@ -84,15 +85,28 @@ function Item(props) {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
+            <Typography id="modal-modal-title" variant="h2" component="h2">
               50% OFF{' '}
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-              Hasta el Viernes 16/5*
+            <Typography
+              id="modal-modal-description"
+              variant="h4"
+              component="h3"
+              sx={{ mt: 15 }}
+            >
+              ¡La oferta va acá! ¡y sigue acá! ¡y acá también!{' '}
+            </Typography>
+            <Typography
+              id="modal-modal-description"
+              variant="body2"
+              component="h4"
+              sx={{ mt: 15 }}
+            >
+              *Promoción solo válida en efectivo / débito{' '}
             </Typography>
           </Box>
         </Modal>
-        {/* <BasicModal /> */}
+        {/*  ////////// MODAL //////  */}
       </Box>
     </Paper>
   );

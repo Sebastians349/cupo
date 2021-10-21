@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stack, Link, Spacer } from '@chakra-ui/layout';
-import { SimpleGrid, Center } from '@chakra-ui/react';
+import { SimpleGrid, Center, Flex } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
@@ -20,7 +20,9 @@ const Categorias = () => {
       </Breadcrumb>
       <Spacer />
       {/* Carrousel */}
-      <Example />
+      <Flex justify="center" alignItems="center">
+        <Example />
+      </Flex>
       {/* Carrousel */}
       <Center pb="3">
         <LogoHeader titulo="categorías" />
