@@ -24,35 +24,43 @@ const CatAlimentos = () => {
           <BreadcrumbLink href="#">Alimentos</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
-      <Center>
+      <Center padding="10">
         <LogoHeader titulo="Alimentos" />
       </Center>
       <Container maxW="container.xl">
         <SimpleGrid minChildWidth="175px" spacing="10px" mt={3}>
-          <PruebaBox nombre="La Aldea" />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
-          <PruebaBox nombre={faker.random.word()} />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
         </SimpleGrid>
       </Container>
     </Box>

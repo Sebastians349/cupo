@@ -45,8 +45,8 @@ const PruebaBox = props => {
               <Image
                 borderRadius="full"
                 boxSize="100px"
-                // src={props.logo}
-                src={faker.image.avatar()}
+                src={props.logo}
+                // src={faker.image.avatar()}
                 alt="logo del comercio"
                 fallbackSrc="https://via.placeholder.com/100"
               />

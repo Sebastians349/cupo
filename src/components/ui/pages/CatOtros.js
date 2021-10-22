@@ -1,11 +1,12 @@
 import React from 'react';
-import { Box, SimpleGrid, Center } from '@chakra-ui/layout';
+import { Box, SimpleGrid, Center, Container } from '@chakra-ui/layout';
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
 } from '@chakra-ui/breadcrumb';
 import LogoHeader from '../LogoHeader';
+import PruebaBox from '../PruebaBox';
 
 const CatOtros = () => {
   return (
@@ -18,56 +19,48 @@ const CatOtros = () => {
           <BreadcrumbLink href="/Categorias">Categorias</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink href="#">Otros</BreadcrumbLink>
+          <BreadcrumbLink href="#">Otros rubros</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
-      <Center>
+      <Center padding="10">
         <LogoHeader titulo="Otros rubros" />
       </Center>
-      <SimpleGrid minChildWidth="100px" spacing="10px" p={1} mt={3}>
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-        <Box bgColor="red.100" height="100px" />
-      </SimpleGrid>
+      <Container maxW="container.xl">
+        <SimpleGrid minChildWidth="175px" spacing="10px" mt={3}>
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+        </SimpleGrid>
+      </Container>
     </Box>
   );
 };

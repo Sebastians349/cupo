@@ -22,39 +22,43 @@ const CatActiv = () => {
           <BreadcrumbLink href="#">Actividades</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
-      <Center>
-        <LogoHeader titulo="actividades" />
+      <Center padding="10">
+        <LogoHeader titulo="Actividades" />
       </Center>
       <Container maxW="container.xl">
-        <SimpleGrid minChildWidth="125px" spacing="10px" mt={3}>
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
-          <PruebaBox />
+        <SimpleGrid minChildWidth="175px" spacing="10px" mt={3}>
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
         </SimpleGrid>
       </Container>
     </Box>
