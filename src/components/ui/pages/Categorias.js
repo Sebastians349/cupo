@@ -1,13 +1,13 @@
 import React from 'react';
 import { Stack, Link, Spacer } from '@chakra-ui/layout';
-import { SimpleGrid, Center, Flex } from '@chakra-ui/react';
+import { SimpleGrid, Center } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
 import Carou2 from '../Carousel/Carou2';
 import Carou3 from '../Carousel/Carou3';
-import Carou from '../../Carou';
+import Carou from '../Carousel/Carou';
 
 const Categorias = () => {
   return (

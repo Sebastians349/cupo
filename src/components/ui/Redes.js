@@ -10,7 +10,11 @@ import {
 import { IconButton, Tooltip } from '@chakra-ui/react';
 
 const Redes = props => {
-  const wapp = 'https://wa.me/5411' + props.wapp;
+  //CHECK medio falopa pero desde el Link no podia pasarle bien los props.
+  const wapp =
+    'https://wa.me/5411' +
+    props.wapp +
+    '?text=¡Hola!%20Ví%20la%20oferta%20de%20Cupoghlan.%20Sale%20🔥?';
   return (
     <Stack direction={['row']}>
       <Tooltip fontWeight="light" label="">

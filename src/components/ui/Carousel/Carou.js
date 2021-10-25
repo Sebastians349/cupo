@@ -3,7 +3,8 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
-import Redes from './ui/Redes';
+import Redes from '../Redes';
+
 const style = {
   position: 'absolute',
   top: '50%',
@@ -24,13 +25,13 @@ function Carou(props) {
       id: 1,
       name: 'La Aldea',
       description: 'Casa de Medialunas',
-      wapp: '26125615',
+      wapp: '26125615', // plan!
     },
     {
       id: 2,
       name: 'Café Martinez',
       description: 'Expertos en café',
-      wapp: '62868541',
+      wapp: '62868541', //C
     },
     {
       id: 3,
@@ -105,7 +106,10 @@ function Item(props) {
             >
               *Promoción solo válida en efectivo / débito{' '}
             </Typography>
-            <Redes wapp={props.item.wapp} />
+
+            <Typography sx={{ alignItems: 'center' }}>
+              <Redes wapp={props.item.wapp} />
+            </Typography>
           </Box>
         </Modal>
         {/*  ////////// MODAL //////  */}
