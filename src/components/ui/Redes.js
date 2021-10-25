@@ -9,7 +9,8 @@ import {
 } from 'react-icons/fa';
 import { IconButton, Tooltip } from '@chakra-ui/react';
 
-const Redes = () => {
+const Redes = props => {
+  const wapp = 'https://wa.me/5411' + props.wapp;
   return (
     <Stack direction={['row']}>
       <Tooltip fontWeight="light" label="">
@@ -42,8 +43,8 @@ const Redes = () => {
           ></IconButton>
         </Link>
       </Tooltip>
-      <Tooltip fontWeight="light" label="">
-        <Link href="https://twitter.com/" isExternal>
+      <Tooltip fontWeight="light" label="whatsapp">
+        <Link href={wapp} isExternal>
           <IconButton
             aria-label="Search database"
             variant="ghost"

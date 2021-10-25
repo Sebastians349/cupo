@@ -3,7 +3,7 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
-// import faker from 'faker';
+import Redes from './ui/Redes';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -21,19 +21,22 @@ const style = {
 function Carou(props) {
   const items = [
     {
+      id: 1,
       name: 'La Aldea',
       description: 'Casa de Medialunas',
-      color: 'rgb(125, 133, 177)',
+      wapp: '26125615',
     },
     {
+      id: 2,
       name: 'Café Martinez',
       description: 'Expertos en café',
-      color: 'rgb(206, 126, 120)',
+      wapp: '62868541',
     },
     {
+      id: 3,
       name: 'Estacion Verde',
       description: '¡Cosas Ricas!',
-      color: 'rgb(100, 172, 200)',
+      wapp: '50500147', // es el del GCBA
     },
   ];
 
@@ -102,6 +105,7 @@ function Item(props) {
             >
               *Promoción solo válida en efectivo / débito{' '}
             </Typography>
+            <Redes wapp={props.item.wapp} />
           </Box>
         </Modal>
         {/*  ////////// MODAL //////  */}
