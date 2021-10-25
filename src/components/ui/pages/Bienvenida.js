@@ -13,7 +13,7 @@ const Bienvenida = () => {
       bgPosition="center"
       bgRepeat="no-repeat"
       bgSize="cover"
-      opacity="0.6"
+      opacity="0.7"
       minH="100vh"
     >
       <Center>

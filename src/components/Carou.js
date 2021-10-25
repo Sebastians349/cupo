@@ -15,14 +15,14 @@ const style = {
   borderRadius: 4,
   boxShadow: 48,
   textAlign: 'center',
-  p: 4,
+  // p: 4,
 };
 
-function Example(props) {
-  var items = [
+function Carou(props) {
+  const items = [
     {
       name: 'La Aldea',
-      description: 'Las mejores mediaslunas del universo',
+      description: 'Casa de Medialunas',
       color: 'rgb(125, 133, 177)',
     },
     {
@@ -32,7 +32,7 @@ function Example(props) {
     },
     {
       name: 'Estacion Verde',
-      description: 'El carrot cake sana',
+      description: '¡Cosas Ricas!',
       color: 'rgb(100, 172, 200)',
     },
   ];
@@ -68,15 +68,13 @@ function Item(props) {
         <Box sx={{ fontWeight: '500', fontSize: 24 }}>
           <h2>{props.item.name}</h2>
         </Box>
-        <Box sx={{ letterSpacing: 1, fontWeight: 'medium' }}>
+        <Box sx={{ letterSpacing: 1, fontWeight: 'medium', padding: 5 }}>
           <p>{props.item.description}</p>
         </Box>
       </Box>
 
       <Box sx={{ textAlign: 'center' }}>
-        <Button onClick={handleOpen}>
-          ¡CLICKEÁ PARA VER LA OFERTA DESTACADA!
-        </Button>
+        <Button onClick={handleOpen}>¡CLICKEÁ PARA VER LA OFERTA!</Button>
         {/*  ////////// MODAL //////  */}
         <Modal
           open={open}
@@ -112,4 +110,4 @@ function Item(props) {
   );
 }
 
-export default Example;
+export default Carou;

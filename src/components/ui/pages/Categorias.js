@@ -5,7 +5,9 @@ import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
-import Example from '../../Example';
+import Carou2 from '../Carousel/Carou2';
+import Carou3 from '../Carousel/Carou3';
+import Carou from '../../Carou';
 
 const Categorias = () => {
   return (
@@ -20,9 +22,16 @@ const Categorias = () => {
       </Breadcrumb>
       <Spacer />
       {/* Carrousel */}
-      <Flex justify="center" alignItems="center">
-        <Example />
-      </Flex>
+      <Stack
+        direction={['column', 'row']}
+        spacing="50px"
+        justify="center"
+        mb="72"
+      >
+        <Carou />
+        <Carou2 />
+        <Carou3 />
+      </Stack>
       {/* Carrousel */}
       <Center pb="3">
         <LogoHeader titulo="categorías" />
