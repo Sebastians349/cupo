@@ -22,9 +22,9 @@ const Nav = () => {
         {/* FIX COLORES DARK/LIGHT MODE */}
         Categorias
       </Link>
-      <Link as={ReachLink} to="/Destacados">
+      {/* <Link as={ReachLink} to="/Destacados">
         Destacados
-      </Link>
+      </Link> */}
       <Link as={ReachLink} to="/Faq">
         Faq
       </Link>

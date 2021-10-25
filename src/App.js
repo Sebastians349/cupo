@@ -30,7 +30,7 @@ function App() {
         </HStack>
       </Flex>
       <Switch>
-        {/* <Route path="/Bienvenida">
+        {/* FIX<Route path="/Bienvenida">
           <Bienvenida />
         </Route> */}
         <Route path="/Categorias">
@@ -63,8 +63,9 @@ function App() {
         <Route path="/CatOtros">
           <CatOtros />
         </Route>
+        {/* CHECK POR QUE NO RUTEA SI PONGO EL COMPONENTE ARRIBA */}
         <Bienvenida />
-        <Sponsors />
+        {/* TODO SI VA <Sponsors /> */}
       </Switch>
       <Footer />
     </ChakraProvider>
