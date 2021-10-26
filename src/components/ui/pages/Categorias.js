@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Link, Spacer } from '@chakra-ui/layout';
+import { Stack, Link, Spacer, Heading } from '@chakra-ui/layout';
 import { SimpleGrid, Center } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
@@ -22,19 +22,24 @@ const Categorias = () => {
       </Breadcrumb>
       <Spacer />
       {/* Carrousel */}
-      <Stack
-        direction={['column', 'row']}
-        spacing="50px"
-        justify="center"
-        mb="72"
+      <Heading
+        Heading
+        as="h2"
+        size="lg"
+        textAlign="center"
+        textTransform="uppercase"
+        padding="5"
       >
+        Destacados
+      </Heading>
+      <Stack direction={['column', 'row']} spacing="50px" justify="center">
         <Carou />
         <Carou2 />
         <Carou3 />
       </Stack>
       {/* Carrousel */}
-      <Center pb="3">
-        <LogoHeader titulo="categorías" />
+      <Center pb="10" pt="16">
+        <LogoHeader titulo="categorías" as="h1" />
       </Center>
       <SimpleGrid minChildWidth="420px" spacing="40px">
         <Link as={ReachLink} to="/CatAlimentos">
