@@ -3,8 +3,9 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
-// import faker from 'faker';
+import Redes from '../Redes';
 const style = {
+  // CHECK style para el modal
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -15,25 +16,28 @@ const style = {
   borderRadius: 4,
   boxShadow: 48,
   textAlign: 'center',
-  //   p: 4,
+  p: 4,
 };
 
 function Carou2(props) {
   const items = [
     {
-      name: 'Un local',
-      description: 'lorem ipsum',
-      color: 'rgb(125, 133, 177)',
+      id: 1,
+      name: 'Plan!',
+      description: 'Que localete',
+      wapp: '26125615', // plan!
     },
     {
-      name: 'Otro local',
-      description: 'lorem ipsum',
-      color: 'rgb(206, 126, 120)',
+      id: 2,
+      name: 'Local 2',
+      description: 'Que localete',
+      wapp: '62868541', //C
     },
     {
-      name: 'Tercer Local',
-      description: 'lorem ipsum',
-      color: 'rgb(100, 172, 200)',
+      id: 3,
+      name: 'Local 3',
+      description: '¡Cosas Ricas!',
+      wapp: '50500147', // es el del GCBA
     },
   ];
 
@@ -100,8 +104,17 @@ function Item(props) {
               component="h4"
               sx={{ mt: 15 }}
             >
+              {' '}
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               *Promoción solo válida en efectivo / débito{' '}
             </Typography>
+            <Box sx={{ marginTop: '5rem' }}>
+              <Redes wapp={props.item.wapp} />
+            </Box>
           </Box>
         </Modal>
         {/*  ////////// MODAL //////  */}

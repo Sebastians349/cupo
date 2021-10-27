@@ -14,31 +14,31 @@ const Redes = props => {
   const wapp =
     'https://wa.me/5411' +
     props.wapp +
-    '?text=¡Hola!%20Ví%20la%20oferta%20de%20Cupoghlan.%20Sale%20🔥?';
+    '?text=¡Hola!%20Ví%20la%20oferta%20de%20Cupoghlan.%20🔥?';
   return (
-    <Stack direction={['row']}>
-      <Tooltip fontWeight="light" label="">
+    <Stack direction={['row']} justifyContent="space-around">
+      <Tooltip fontWeight="light" label="Mail">
         <IconButton
           aria-label="Search database"
           variant="ghost"
           icon={<FaEnvelope />}
         ></IconButton>
       </Tooltip>
-      <Tooltip fontWeight="light" label="">
+      <Tooltip fontWeight="light" label="Facebook">
         <IconButton
           aria-label="Search database"
           variant="ghost"
           icon={<FaFacebook />}
         ></IconButton>
       </Tooltip>
-      <Tooltip fontWeight="light" label="">
+      <Tooltip fontWeight="light" label="Instagram">
         <IconButton
           aria-label="Search database"
           variant="ghost"
           icon={<FaInstagram />}
         ></IconButton>
       </Tooltip>
-      <Tooltip fontWeight="light" label="">
+      <Tooltip fontWeight="light" label="Twitter">
         <Link href="https://twitter.com/" isExternal>
           <IconButton
             aria-label="Search database"
@@ -47,7 +47,7 @@ const Redes = props => {
           ></IconButton>
         </Link>
       </Tooltip>
-      <Tooltip fontWeight="light" label="whatsapp">
+      <Tooltip fontWeight="light" label="Whatsapp">
         <Link href={wapp} isExternal>
           <IconButton
             aria-label="Search database"

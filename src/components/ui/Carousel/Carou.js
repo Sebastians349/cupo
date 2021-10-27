@@ -6,6 +6,7 @@ import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
 import Redes from '../Redes';
 
 const style = {
+  // CHECK style para el modal
   position: 'absolute',
   top: '50%',
   left: '50%',
@@ -16,15 +17,15 @@ const style = {
   borderRadius: 4,
   boxShadow: 48,
   textAlign: 'center',
-  // p: 4,
+  p: 4,
 };
 
 function Carou(props) {
   const items = [
     {
       id: 1,
-      name: 'La Aldea',
-      description: 'Casa de Medialunas',
+      name: 'Plan!',
+      description: 'Organizadores Magnéticos',
       wapp: '26125615', // plan!
     },
     {
@@ -61,7 +62,6 @@ function Item(props) {
       <Box
         sx={{
           backgroundColor: 'rgb(100, 172, 200)',
-          //faker.commerce.color()
           textAlign: 'center',
           color: 'whitesmoke',
           minHeight: '75px',
@@ -94,22 +94,25 @@ function Item(props) {
               id="modal-modal-description"
               variant="h4"
               component="h3"
-              sx={{ mt: 15 }}
             >
-              ¡La oferta va acá! ¡y sigue acá! ¡y acá también!{' '}
+              ¡La oferta va acá! <br /> ¡y sigue acá! <br />
+              ¡y acá también!{' '}
             </Typography>
             <Typography
               id="modal-modal-description"
               variant="body2"
               component="h4"
-              sx={{ mt: 15 }}
             >
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
               *Promoción solo válida en efectivo / débito{' '}
             </Typography>
-
-            <Typography sx={{ alignItems: 'center' }}>
+            <Box sx={{ marginTop: '5rem' }}>
               <Redes wapp={props.item.wapp} />
-            </Typography>
+            </Box>
           </Box>
         </Modal>
         {/*  ////////// MODAL //////  */}
