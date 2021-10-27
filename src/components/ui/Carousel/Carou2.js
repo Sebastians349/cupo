@@ -16,26 +16,26 @@ const style = {
   borderRadius: 4,
   boxShadow: 48,
   textAlign: 'center',
-  p: 4,
+  padding: 15,
 };
 
 function Carou2(props) {
   const items = [
     {
       id: 1,
-      name: 'Plan!',
+      name: 'Organiza tu plan!',
       description: 'Que localete',
       wapp: '26125615', // plan!
     },
     {
       id: 2,
-      name: 'Local 2',
+      name: 'Local numero 2',
       description: 'Que localete',
       wapp: '62868541', //C
     },
     {
       id: 3,
-      name: 'Local 3',
+      name: 'Local numero 3',
       description: '¡Cosas Ricas!',
       wapp: '50500147', // es el del GCBA
     },
@@ -61,24 +61,41 @@ function Item(props) {
       <Box
         sx={{
           backgroundColor: 'rgb(125, 133, 177)',
-          //faker.commerce.color()
           textAlign: 'center',
           color: 'whitesmoke',
-          minHeight: '75px',
           borderRadius: 5,
           letterSpacing: 3,
+          padding: 10,
         }}
       >
-        <Box sx={{ fontWeight: '500', fontSize: 24 }}>
+        <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
           <h2>{props.item.name}</h2>
         </Box>
-        <Box sx={{ letterSpacing: 1, fontWeight: 'medium', padding: 5 }}>
+        <Box
+          sx={{
+            letterSpacing: 1,
+            fontWeight: 'medium',
+            padding: 5,
+            fontSize: 18,
+          }}
+        >
           <p>{props.item.description}</p>
         </Box>
+        <Button onClick={handleOpen}>
+          <Box
+            sx={{
+              color: 'white',
+              fontSize: 18,
+              padding: 5,
+              fontWeight: '500',
+            }}
+          >
+            Click acá
+          </Box>
+        </Button>
       </Box>
 
       <Box sx={{ textAlign: 'center' }}>
-        <Button onClick={handleOpen}>¡CLICKEÁ PARA VER LA OFERTA!</Button>
         {/*  ////////// MODAL //////  */}
         <Modal
           open={open}

@@ -32,7 +32,7 @@ const Categorias = () => {
       >
         Destacados
       </Heading>
-      <Stack direction={['column', 'row']} spacing="50px" justify="center">
+      <Stack direction={['column', 'row']} spacing="20px" justify="center">
         <Carou />
         <Carou2 />
         <Carou3 />

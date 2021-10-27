@@ -24,7 +24,7 @@ function Carou(props) {
   const items = [
     {
       id: 1,
-      name: 'Plan!',
+      name: 'organiza tu plan!',
       description: 'Organizadores Magnéticos',
       wapp: '26125615', // plan!
     },
@@ -64,22 +64,40 @@ function Item(props) {
           backgroundColor: 'rgb(100, 172, 200)',
           textAlign: 'center',
           color: 'whitesmoke',
-          minHeight: '75px',
           borderRadius: 5,
           letterSpacing: 3,
+          padding: 10,
         }}
       >
-        <Box sx={{ fontWeight: '500', fontSize: 24 }}>
+        <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
           <h2>{props.item.name}</h2>
         </Box>
-        <Box sx={{ letterSpacing: 1, fontWeight: 'medium', padding: 5 }}>
+        <Box
+          sx={{
+            letterSpacing: 1,
+            fontWeight: 'medium',
+            padding: 5,
+            fontSize: 18,
+          }}
+        >
           <p>{props.item.description}</p>
         </Box>
+        <Button onClick={handleOpen}>
+          <Box
+            sx={{
+              color: 'white',
+              fontSize: 18,
+              padding: 5,
+              fontWeight: '500',
+            }}
+          >
+            Click acá
+          </Box>
+        </Button>
       </Box>
 
-      <Box sx={{ textAlign: 'center' }}>
-        <Button onClick={handleOpen}>¡CLICKEÁ PARA VER LA OFERTA!</Button>
-        {/*  ////////// MODAL //////  */}
+      {/*  ////////// MODAL //////  */}
+      <Box>
         <Modal
           open={open}
           onClose={handleClose}
@@ -115,8 +133,8 @@ function Item(props) {
             </Box>
           </Box>
         </Modal>
-        {/*  ////////// MODAL //////  */}
       </Box>
+      {/*  ////////// MODAL //////  */}
     </Paper>
   );
 }
