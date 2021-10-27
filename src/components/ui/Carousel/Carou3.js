@@ -76,7 +76,7 @@ function Item(props) {
           sx={{
             letterSpacing: 1,
             fontWeight: 'medium',
-            padding: 5,
+            // padding: 5,
             fontSize: 18,
           }}
         >
@@ -87,11 +87,11 @@ function Item(props) {
             sx={{
               color: 'white',
               fontSize: 18,
-              padding: 5,
+              // padding: 5,
               fontWeight: '500',
             }}
           >
-            Click acá
+            + INFO
           </Box>
         </Button>
       </Box>

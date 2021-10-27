@@ -29,13 +29,13 @@ function Carou2(props) {
     },
     {
       id: 2,
-      name: 'Local numero 2',
+      name: 'Local num 2',
       description: 'Que localete',
       wapp: '62868541', //C
     },
     {
       id: 3,
-      name: 'Local numero 3',
+      name: 'Local num 3',
       description: '¡Cosas Ricas!',
       wapp: '50500147', // es el del GCBA
     },
@@ -75,7 +75,7 @@ function Item(props) {
           sx={{
             letterSpacing: 1,
             fontWeight: 'medium',
-            padding: 5,
+            // padding: 5,
             fontSize: 18,
           }}
         >
@@ -86,11 +86,11 @@ function Item(props) {
             sx={{
               color: 'white',
               fontSize: 18,
-              padding: 5,
+              // padding: 5,
               fontWeight: '500',
             }}
           >
-            Click acá
+            + INFO{' '}
           </Box>
         </Button>
       </Box>

@@ -8,7 +8,6 @@ import {
 import { Container } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
 import PruebaBox from '../PruebaBox';
-import faker from 'faker';
 
 const CatAlimentos = () => {
   return (
@@ -29,7 +28,11 @@ const CatAlimentos = () => {
       </Center>
       <Container maxW="container.xl">
         <SimpleGrid minChildWidth="175px" spacing="10px" mt={3}>
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox
+            nombre="CUPOGHLAN"
+            logo="/logocupogb500.png"
+            wapp="111111111"
+          />
           <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
           <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
           <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />

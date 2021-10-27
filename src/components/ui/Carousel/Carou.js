@@ -24,21 +24,24 @@ function Carou(props) {
   const items = [
     {
       id: 1,
-      name: 'organiza tu plan!',
+      name: 'Organiza tu plan!',
       description: 'Organizadores Magnéticos',
       wapp: '26125615', // plan!
+      oferta: '20 % off',
     },
     {
       id: 2,
       name: 'Café Martinez',
       description: 'Expertos en café',
       wapp: '62868541', //C
+      oferta: '20 % off',
     },
     {
       id: 3,
       name: 'Estacion Verde',
       description: '¡Cosas Ricas!',
       wapp: '50500147', // es el del GCBA
+      oferta: '20 % off',
     },
   ];
 
@@ -69,15 +72,22 @@ function Item(props) {
           padding: 10,
         }}
       >
-        <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
+        <Box
+          noWrap
+          sx={{
+            fontWeight: '500',
+            fontSize: 28,
+            // padding: 5,
+          }}
+        >
           <h2>{props.item.name}</h2>
         </Box>
         <Box
           sx={{
             letterSpacing: 1,
             fontWeight: 'medium',
-            padding: 5,
             fontSize: 18,
+            // padding: 5,
           }}
         >
           <p>{props.item.description}</p>
@@ -87,11 +97,11 @@ function Item(props) {
             sx={{
               color: 'white',
               fontSize: 18,
-              padding: 5,
+              // padding: 5,
               fontWeight: '500',
             }}
           >
-            Click acá
+            + INFO
           </Box>
         </Button>
       </Box>
@@ -106,7 +116,7 @@ function Item(props) {
         >
           <Box sx={style}>
             <Typography id="modal-modal-title" variant="h2" component="h2">
-              50% OFF{' '}
+              {props.item.oferta}
             </Typography>
             <Typography
               id="modal-modal-description"

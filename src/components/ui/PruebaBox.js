@@ -17,7 +17,6 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import Redes from './Redes';
-import faker from 'faker/locale/ar';
 
 // TODO CAMBIAR EL NOMBRE AL COMPO PORQUE ME CONFUNDE SIEMPRE
 
@@ -29,7 +28,6 @@ const PruebaBox = props => {
       <Box
         onClick={onOpen}
         borderLeftWidth="5px"
-        // borderLeftColor={faker.commerce.color()}
         borderLeftColor="gray.400"
         bg="whiteAlpha.500"
         _hover={{ bgColor: 'gray.400' }}
@@ -46,7 +44,6 @@ const PruebaBox = props => {
                 borderRadius="full"
                 boxSize="100px"
                 src={props.logo}
-                // src={faker.image.avatar()}
                 alt="logo del comercio"
                 fallbackSrc="https://via.placeholder.com/100"
               />
@@ -88,7 +85,7 @@ const PruebaBox = props => {
                     fontWeight="semibold"
                     textTransform="uppercase"
                   >
-                    <Redes name="" />
+                    <Redes wapp="111111111111111" />
                   </ModalFooter>
                 </Center>
               </ModalContent>
