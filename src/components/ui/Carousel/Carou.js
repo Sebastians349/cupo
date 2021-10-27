@@ -1,4 +1,5 @@
 // Use el excelente Learus Carousel .🙌🙏✨ https://github.com/Learus/react-material-ui-carousel
+//          backgroundColor: 'rgb(100, 172, 200)',
 
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
@@ -55,7 +56,7 @@ function Carou(props) {
 }
 
 function Item(props) {
-  // implementé el modal básico de MUI
+  //  modal básico de MUI
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -72,27 +73,23 @@ function Item(props) {
           padding: 10,
         }}
       >
-        <Box
-          noWrap
-          sx={{
-            fontWeight: '500',
-            fontSize: 28,
-            // padding: 5,
-          }}
-        >
+        <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
           <h2>{props.item.name}</h2>
         </Box>
         <Box
           sx={{
             letterSpacing: 1,
             fontWeight: 'medium',
-            fontSize: 18,
             // padding: 5,
+            fontSize: 18,
           }}
         >
           <p>{props.item.description}</p>
         </Box>
-        <Button onClick={handleOpen}>
+        <Button
+          sx={{ border: '1px', borderColor: 'white' }}
+          onClick={handleOpen}
+        >
           <Box
             sx={{
               color: 'white',

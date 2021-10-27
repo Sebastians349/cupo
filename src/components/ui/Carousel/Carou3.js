@@ -25,20 +25,23 @@ function Carou3(props) {
     {
       id: 1,
       name: 'Organiza tu plan!',
-      description: 'Que localete',
+      description: 'Organizadores Magnéticos',
       wapp: '26125615', // plan!
+      oferta: '20 % off',
     },
     {
       id: 2,
-      name: 'Local numero 2',
-      description: 'Que localete',
+      name: 'Café Martinez',
+      description: 'Expertos en café',
       wapp: '62868541', //C
+      oferta: '20 % off',
     },
     {
       id: 3,
-      name: 'Local numero 3',
+      name: 'Estacion Verde',
       description: '¡Cosas Ricas!',
       wapp: '50500147', // es el del GCBA
+      oferta: '20 % off',
     },
   ];
 
