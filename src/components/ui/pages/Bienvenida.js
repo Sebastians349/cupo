@@ -18,7 +18,7 @@ const Bienvenida = () => {
     >
       <Center>
         <Link as={ReachLink} to="/Categorias">
-          <Image src="logocupogclarito.png " opacity="1"></Image>
+          <Image src="logoclarito.png " opacity="1"></Image>
         </Link>
       </Center>
     </Box>
