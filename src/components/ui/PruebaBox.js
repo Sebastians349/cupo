@@ -85,7 +85,7 @@ const PruebaBox = props => {
                     fontWeight="semibold"
                     textTransform="uppercase"
                   >
-                    <Redes wapp="111111111111111" />
+                    <Redes wapp={props.wapp} />
                   </ModalFooter>
                 </Center>
               </ModalContent>
