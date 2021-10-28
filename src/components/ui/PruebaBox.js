@@ -27,6 +27,7 @@ import { MdLocationOn } from 'react-icons/md';
 const PruebaBox = props => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  // misma logica que en <redes/> para pasarle props.
   const maps = 'https://www.google.com/maps/search/' + props.ubicacion;
 
   return (
@@ -105,12 +106,13 @@ const PruebaBox = props => {
                     <Stack>
                       <Text mt="1" textAlign="center" fontSize="xs">
                         {props.descripcion} <Spacer />
-                        {props.ubicacion}
                         <Link href={maps} textDecor="none" isExternal>
                           <Icon ml={1} mb={1} w={5} h={5} as={MdLocationOn} />{' '}
                         </Link>
+                        {props.ubicacion}
                       </Text>
                       <Redes
+                        mail={props.mail}
                         wapp={props.wapp}
                         tw={props.tw}
                         fb={props.fb}

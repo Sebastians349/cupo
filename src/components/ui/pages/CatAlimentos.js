@@ -19,7 +19,7 @@ const CatAlimentos = () => {
       descripcion: 'verduleria',
       categoria: 'alimentos',
       oferta: '25 % OFF ',
-      ubicacion: 'Romulo Naon 2400',
+      ubicacion: 'Romulo Naon 2199',
       mail: 'lallaa@gmail.com',
       fb: 'markete',
       ig: 'localete',
@@ -28,6 +28,20 @@ const CatAlimentos = () => {
     },
     {
       id: 2,
+      logo: '/assets/img/2.png',
+      nombre: 'DIego',
+      descripcion: 'heladeria',
+      categoria: 'alimentos',
+      oferta: 'Martes 2 x1 kg  ',
+      ubicacion: 'Romulo Naon 2402',
+      mail: 'diegote@gmail.com',
+      fb: 'markete',
+      ig: 'localete',
+      tw: 'potus',
+      wapp: '26125615', // plan!
+    },
+    {
+      id: 3,
       logo: '/assets/img/2.png',
       nombre: 'local 2',
       descripcion: 'alimentos',
@@ -41,7 +55,7 @@ const CatAlimentos = () => {
       wapp: '26125615', // plan!
     },
     {
-      id: 3,
+      id: 4,
       logo: '/assets/img/3.png',
       nombre: 'local 3',
       descripcion: 'peluqueria',
@@ -86,6 +100,19 @@ const CatAlimentos = () => {
             fb={data[0].fb}
             ig={data[0].ig}
             wapp={data[0].wapp}
+          />
+          <PruebaBox
+            key={data[1].id}
+            logo={data[1].logo}
+            nombre={data[1].nombre}
+            descripcion={data[1].descripcion}
+            oferta={data[1].oferta}
+            ubicacion={data[1].ubicacion}
+            mail={data[1].mail}
+            tw={data[1].tw}
+            fb={data[1].fb}
+            ig={data[1].ig}
+            wapp={data[1].wapp}
           />
           <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
           <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
