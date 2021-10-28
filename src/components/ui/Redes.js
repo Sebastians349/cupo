@@ -15,31 +15,41 @@ const Redes = props => {
     'https://wa.me/5411' +
     props.wapp +
     '?text=¡Hola!%20Ví%20la%20oferta%20de%20Cupoghlan.%20🔥?';
+  const mail = 'mailto:' + props.mail;
+  const fb = 'https://facebook.com/' + props.fb;
+  const ig = 'https://instagram.com/' + props.ig;
+  const tw = 'https://twitter.com/' + props.tw;
   return (
     <Stack direction={['row']} justifyContent="space-around">
       <Tooltip fontWeight="light" label="Mail">
-        <IconButton
-          aria-label="Search database"
-          variant="ghost"
-          icon={<FaEnvelope />}
-        ></IconButton>
+        <Link href={mail}>
+          <IconButton
+            aria-label="Search database"
+            variant="ghost"
+            icon={<FaEnvelope />}
+          ></IconButton>
+        </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Facebook">
-        <IconButton
-          aria-label="Search database"
-          variant="ghost"
-          icon={<FaFacebook />}
-        ></IconButton>
+        <Link href={fb}>
+          <IconButton
+            aria-label="Search database"
+            variant="ghost"
+            icon={<FaFacebook />}
+          ></IconButton>
+        </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Instagram">
-        <IconButton
-          aria-label="Search database"
-          variant="ghost"
-          icon={<FaInstagram />}
-        ></IconButton>
+        <Link href={ig}>
+          <IconButton
+            aria-label="Search database"
+            variant="ghost"
+            icon={<FaInstagram />}
+          ></IconButton>
+        </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Twitter">
-        <Link href="https://twitter.com/" isExternal>
+        <Link href={tw} isExternal>
           <IconButton
             aria-label="Search database"
             variant="ghost"

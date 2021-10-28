@@ -14,23 +14,23 @@ const CatAlimentos = () => {
   const data = [
     {
       id: 1,
-      logo: '/assets/img/1.png',
-      nombre: 'local 1',
-      description: 'verduleria',
+      logo: '/assets/img/4.png',
+      nombre: 'Del amigo',
+      descripcion: 'verduleria',
       categoria: 'alimentos',
-      oferta: '20 % off',
-      ubicacion: '20 % off',
-      mail: '20 % off',
-      fb: '20 % off',
-      ig: '20 % off',
-      tw: '20 % off',
+      oferta: '25 % OFF ',
+      ubicacion: 'Romulo Naon 2400',
+      mail: 'lallaa@gmail.com',
+      fb: 'markete',
+      ig: 'localete',
+      tw: 'potus',
       wapp: '26125615', // plan!
     },
     {
       id: 2,
       logo: '/assets/img/2.png',
       nombre: 'local 2',
-      description: 'alimentos',
+      descripcion: 'alimentos',
       categoria: 'panaderia',
       oferta: '20 % off',
       ubicacion: '20 % off',
@@ -44,11 +44,11 @@ const CatAlimentos = () => {
       id: 3,
       logo: '/assets/img/3.png',
       nombre: 'local 3',
-      description: 'peluqueria',
+      descripcion: 'peluqueria',
       categoria: 'otros',
       oferta: '20 % off',
       ubicacion: '20 % off',
-      mail: '20 % off',
+      mail: 'lalal',
       fb: '20 % off',
       ig: '20 % off',
       tw: '20 % off',
@@ -76,42 +76,48 @@ const CatAlimentos = () => {
           {/* TODO FIX MEJORAR ESTA FORMA FALOPA DE PASAR DATOS. */}
           <PruebaBox
             key={data[0].id}
-            nombre={data[0].nombre}
             logo={data[0].logo}
+            nombre={data[0].nombre}
+            descripcion={data[0].descripcion}
+            oferta={data[0].oferta}
+            ubicacion={data[0].ubicacion}
+            mail={data[0].mail}
+            tw={data[0].tw}
+            fb={data[0].fb}
+            ig={data[0].ig}
             wapp={data[0].wapp}
           />
-          {/* <PruebaBox id={negocios.id} nombre={negocios}></PruebaBox> */}
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
-          <PruebaBox nombre="CUPOGHLAN" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
+          <PruebaBox nombre="PROXIMAMENTE" logo="/logocupogb500.png" />
         </SimpleGrid>
       </Container>
     </Box>

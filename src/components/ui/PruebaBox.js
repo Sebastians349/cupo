@@ -7,6 +7,8 @@ import {
   Image,
   Spacer,
   Text,
+  Stack,
+  Link,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -15,13 +17,17 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
+  Icon,
 } from '@chakra-ui/react';
 import Redes from './Redes';
+import { MdLocationOn } from 'react-icons/md';
 
 // TODO CAMBIAR EL NOMBRE AL COMPO PORQUE ME CONFUNDE SIEMPRE
 
 const PruebaBox = props => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const maps = 'https://www.google.com/maps/search/' + props.ubicacion;
 
   return (
     <Flex justifyContent="center">
@@ -45,6 +51,7 @@ const PruebaBox = props => {
                 boxSize="100px"
                 src={props.logo}
                 alt="logo del comercio"
+                objectFit="contain"
                 fallbackSrc="https://via.placeholder.com/100"
               />
             </Button>
@@ -69,14 +76,24 @@ const PruebaBox = props => {
                       mb="5"
                       src={props.logo}
                       alt="logo de comercio"
+                      objectFit="contain"
                       fallbackSrc="https://via.placeholder.com/50"
                     />
                   </Center>
-                  <Text textAlign="center">
-                    25 % OFF NOMBRANDO A CUPOGHLAN*
+                  <Text
+                    textAlign="center"
+                    textTransform="uppercase"
+                    fontSize="xl"
+                    fontWeight="semibold"
+                  >
+                    {' '}
+                    {props.oferta}
                   </Text>
-                  <Text mt="1" textAlign="center" fontSize="xx-small">
-                    Promoción válida solo en efectivo{' '}
+                  <Text textAlign="center" fontSize="md">
+                    nombrando a cupoghlan
+                  </Text>
+                  <Text mt="1" textAlign="center" fontSize="x-small">
+                    *Promoción válida solo en efectivo{' '}
                   </Text>
                 </ModalBody>
                 <Center>
@@ -85,7 +102,21 @@ const PruebaBox = props => {
                     fontWeight="semibold"
                     textTransform="uppercase"
                   >
-                    <Redes wapp={props.wapp} />
+                    <Stack>
+                      <Text mt="1" textAlign="center" fontSize="xs">
+                        {props.descripcion} <Spacer />
+                        {props.ubicacion}
+                        <Link href={maps} textDecor="none" isExternal>
+                          <Icon ml={1} mb={1} w={5} h={5} as={MdLocationOn} />{' '}
+                        </Link>
+                      </Text>
+                      <Redes
+                        wapp={props.wapp}
+                        tw={props.tw}
+                        fb={props.fb}
+                        ig={props.ig}
+                      />
+                    </Stack>
                   </ModalFooter>
                 </Center>
               </ModalContent>
