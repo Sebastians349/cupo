@@ -1,37 +1,38 @@
 import React from 'react';
-import { Link, Stack } from '@chakra-ui/layout';
+import { Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
+import { IconButton } from '@chakra-ui/button';
+import { MdMenu } from 'react-icons/md';
+import { Link } from '@chakra-ui/layout';
 import { Link as ReachLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <Stack
-      direction={['column', 'row']}
-      textTransform="uppercase"
-      fontSize="sm"
-      fontWeight="semibold"
-      p={1}
-      /* role="group"
-      // FIX COLOR Y ENTENDER EL ROLE GROUP
-      _groupHover={{ color: 'tomato' }} */
-    >
-      <Link
-        as={ReachLink}
-        to="/Categorias"
-        _hover={{ background: 'teal', color: 'white' }}
-      >
-        {/* FIX COLORES DARK/LIGHT MODE */}
-        Categorias
-      </Link>
-      {/* <Link as={ReachLink} to="/Destacados">
-        Destacados
-      </Link> */}
-      <Link as={ReachLink} to="/Faq">
-        Faq
-      </Link>
-      <Link as={ReachLink} to="/Contacto">
-        Contacto
-      </Link>
-    </Stack>
+    <Menu>
+      <MenuButton
+        as={IconButton}
+        aria-label="Options"
+        icon={<MdMenu />}
+        variant="outline"
+      />
+      <MenuList>
+        <Link
+          as={ReachLink}
+          _hover={{ textDecoration: 'none', bgColor: 'teal.300' }}
+          to="/Categorias"
+        >
+          <MenuItem justifyContent="center">Categorias</MenuItem>
+        </Link>
+        <Link as={ReachLink} _hover={{ textDecoration: 'none' }} to="/Faq">
+          <MenuItem justifyContent="center">Preguntas frecuentes</MenuItem>
+        </Link>
+        <Link as={ReachLink} _hover={{ textDecoration: 'none' }} to="/Contacto">
+          <MenuItem justifyContent="center">Contacto</MenuItem>
+        </Link>
+        <Link as={ReachLink} _hover={{ textDecoration: 'none' }} to="/Sponsors">
+          <MenuItem justifyContent="center">Sponsors</MenuItem>
+        </Link>
+      </MenuList>
+    </Menu>
   );
 };
 

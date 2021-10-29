@@ -23,6 +23,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Flex justify="space-between" boxShadow="xs" p={1}>
+        {/* TODO  REHACER EL HEADER */}
         <Header />
         <HStack>
           <Nav />
@@ -30,9 +31,6 @@ function App() {
         </HStack>
       </Flex>
       <Switch>
-        {/* FIX<Route path="/Bienvenida">
-          <Bienvenida />
-        </Route> */}
         <Route path="/Categorias">
           <Categorias />
         </Route>
@@ -65,7 +63,8 @@ function App() {
         </Route>
         {/* CHECK POR QUE NO RUTEA SI PONGO EL COMPONENTE ARRIBA */}
         <Bienvenida />
-        {/* TODO SI VA <Sponsors /> */}
+        {/* TODO <Route path="/Sponsors">
+            <Sponsors />        </Route>SI VA  */}
       </Switch>
       <Footer />
     </ChakraProvider>
