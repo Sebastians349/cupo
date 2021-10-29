@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Text, Link } from '@chakra-ui/layout';
+import { Stack, Text } from '@chakra-ui/layout';
 
 const CategTextBox = props => {
   return (

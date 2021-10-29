@@ -42,22 +42,34 @@ const Categorias = () => {
         <LogoHeader titulo="categorías" as="h1" />
       </Center>
       <SimpleGrid minChildWidth="420px" spacing="40px">
-        <Link as={ReachLink} to="/CatAlimentos">
+        <Link
+          as={ReachLink}
+          to="/CatAlimentos"
+          _hover={{ textDecoration: 'none' }}
+        >
           <CategBox categ="alimentos" foto="alim.png" />
         </Link>
-        <Link as={ReachLink} to="/CatIndum">
+        <Link as={ReachLink} to="/CatIndum" _hover={{ textDecoration: 'none' }}>
           <CategBox categ="indumentaria" foto="indu.jpg" />
         </Link>
-        <Link as={ReachLink} to="/CatCompras">
+        <Link
+          as={ReachLink}
+          to="/CatCompras"
+          _hover={{ textDecoration: 'none' }}
+        >
           <CategBox categ="compras" foto="compras.jpg" />
         </Link>
-        <Link as={ReachLink} to="/CatGastro">
+        <Link
+          as={ReachLink}
+          to="/CatGastro"
+          _hover={{ textDecoration: 'none' }}
+        >
           <CategBox categ="gastronomia" foto="gastro.jpg" />
         </Link>
-        <Link as={ReachLink} to="/CatActiv">
+        <Link as={ReachLink} to="/CatActiv" _hover={{ textDecoration: 'none' }}>
           <CategBox categ="actividades" foto="acti.jpg" />
         </Link>
-        <Link as={ReachLink} to="/CatOtros">
+        <Link as={ReachLink} to="/CatOtros" _hover={{ textDecoration: 'none' }}>
           <CategBox categ="otros rubros" foto="otros.jpg" />
         </Link>
       </SimpleGrid>

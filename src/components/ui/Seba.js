@@ -5,7 +5,13 @@ const Seba = () => {
   return (
     <Text fontSize="xs">
       &#60;&#x2f;&gt; con ❤ por
-      <Link isExternal href="https://sebasimarro.com">
+      <Link
+        isExternal
+        href="https://sebasimarro.com"
+        _hover={{
+          color: 'teal.300',
+        }}
+      >
         {' '}
         Sebastián Simarro{' '}
       </Link>
