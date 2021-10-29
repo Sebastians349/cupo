@@ -29,7 +29,7 @@ const CatAlimentos = () => {
     {
       id: 2,
       logo: '/assets/img/2.png',
-      nombre: 'DIego',
+      nombre: 'Diego',
       descripcion: 'heladeria',
       categoria: 'alimentos',
       oferta: 'Martes 2 x1 kg  ',
