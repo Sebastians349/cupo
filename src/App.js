@@ -61,10 +61,11 @@ function App() {
         <Route path="/CatOtros">
           <CatOtros />
         </Route>
-        {/* CHECK POR QUE NO RUTEA SI PONGO EL COMPONENTE ARRIBA */}
+        <Route path="/Sponsors">
+          <Sponsors />
+        </Route>
+        {/* CHECK POR QUÉ NO RUTEA SI PONGO EL COMPO ARRIBA */}
         <Bienvenida />
-        {/* TODO <Route path="/Sponsors">
-            <Sponsors />        </Route>SI VA  */}
       </Switch>
       <Footer />
     </ChakraProvider>
