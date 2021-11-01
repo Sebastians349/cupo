@@ -7,11 +7,13 @@ const SocialsList = () => {
   return (
     <Stack direction={['row']}>
       <Tooltip fontWeight="light" label="Enviar un mail">
-        <IconButton
-          aria-label="Search database"
-          variant="ghost"
-          icon={<FaEnvelope />}
-        ></IconButton>
+        <Link href="mailto:cupoghlan@gmail.com">
+          <IconButton
+            aria-label="Search database"
+            variant="ghost"
+            icon={<FaEnvelope />}
+          ></IconButton>
+        </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Facebook">
         <IconButton

@@ -35,7 +35,7 @@ const PruebaBox = props => {
       <Box
         onClick={onOpen}
         borderLeftWidth="5px"
-        borderLeftColor="gray.400"
+        borderLeftColor="#003087" //TODO SETEARLO COMO PRIMARIO - VER DARK MODE
         bg="whiteAlpha.500"
         _hover={{ bgColor: 'gray.400' }}
         borderRadius="lg"

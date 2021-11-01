@@ -20,7 +20,7 @@ const Contacto = () => {
           E-MAIL
         </Heading>
         <Heading as="h3" size="lg" fontWeight="light">
-          somoscupoghlan@gmail.com
+          cupoghlan@gmail.com
         </Heading>
         <Spacer />
         <Heading as="h2" size="xl" fontWeight="semibold">

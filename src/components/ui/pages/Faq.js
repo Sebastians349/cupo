@@ -96,6 +96,9 @@ const Faq = () => {
             </h2>
             <AccordionPanel pb={4}>
               <Container textAlign="justify">
+                Ingresamos los datos que nos brindes (junto con tu oferta) y te
+                asaignamos GRATIS un espacio en la web, segun tu categoria.
+                <Spacer /> <br />
                 Te dejamos un QR para que exhibas en la vidriera de tu local.
                 Cualquier persona, al escanearlo, tiene acceso directo a la web
                 de CUPOGHLAN. <Spacer /> <br /> Donde encuentra los datos de tu
@@ -170,7 +173,8 @@ const Faq = () => {
             <AccordionPanel pb={4}>
               <Container textAlign="justify">
                 Y siempre lo será. Formar parte de CUPOGHLAN solamente requiere
-                pegar en tu vidriera el QR que te llevemos.
+                que como local brindes una oferta mensual y pegar en tu vidriera
+                el QR que te llevemos.
                 <Spacer /> <br /> Nuestro equipo financia los gastos de la web y
                 desarrollo con las publicaciones destacadas, el aporte de
                 sponsors y los paquetes personalizados que ofrecemos. <Spacer />{' '}
