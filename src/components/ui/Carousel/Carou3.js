@@ -23,25 +23,43 @@ const style = {
 function Carou3(props) {
   const items = [
     {
-      id: 1,
-      name: 'Organiza tu plan!',
-      description: 'Organizadores Magnéticos',
+      logo: '/assets/img/logoplan.png',
+      nombre: 'PLAN!',
+      descripcion: 'organizá tu día',
+      categoria: 'compras',
+      oferta: '50 % OFF ',
+      ubicacion: '',
+      mail: 'plansomos@gmail.com',
+      fb: 'plansomos',
+      ig: 'plansomos',
+      tw: '',
       wapp: '26125615', // plan!
-      oferta: '20 % off',
     },
     {
       id: 2,
-      name: 'Café Martinez',
-      description: 'Expertos en café',
-      wapp: '62868541', //C
-      oferta: '20 % off',
+      nombre: 'CAFE MARTINEZ',
+      descripcion: 'Expertos en cafe',
+      categoria: 'gastronomia',
+      oferta: '35 % OFF ',
+      ubicacion: '',
+      mail: 'plansomos@gmail.com',
+      fb: 'plansomos',
+      ig: 'plansomos',
+      tw: '',
+      wapp: '26125615', // plan!
     },
     {
       id: 3,
-      name: 'Estacion Verde',
-      description: '¡Cosas Ricas!',
-      wapp: '50500147', // es el del GCBA
-      oferta: '20 % off',
+      nombre: 'PURO',
+      descripcion: 'Almacen natural',
+      categoria: 'compras',
+      oferta: '2 X 1  ',
+      ubicacion: '',
+      mail: 'plansomos@gmail.com',
+      fb: 'plansomos',
+      ig: 'plansomos',
+      tw: '',
+      wapp: '26125615', // plan!
     },
   ];
 
@@ -69,23 +87,28 @@ function Item(props) {
           color: 'whitesmoke',
           borderRadius: 5,
           letterSpacing: 3,
-          padding: 3,
+          padding: 10,
         }}
       >
         <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
-          <h2>{props.item.name}</h2>
+          <h2>{props.item.nombre}</h2>
         </Box>
         <Box
           sx={{
             letterSpacing: 1,
             fontWeight: 'medium',
-            // padding: 5,
+            mb: '1rem',
             fontSize: 18,
           }}
         >
-          <p>{props.item.description}</p>
+          <p>{props.item.descripcion}</p>
         </Box>
-        <Button sx={{ border: '1px' }} onClick={handleOpen}>
+        <Button
+          color="primary"
+          variant="outlined"
+          size="large"
+          onClick={handleOpen}
+        >
           <Box
             sx={{
               color: 'white',

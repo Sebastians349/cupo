@@ -52,7 +52,7 @@ function Carou(props) {
     {
       id: 3,
       nombre: 'PURO',
-      descripcion: 'Almacen natura',
+      descripcion: 'Almacen natural',
       categoria: 'compras',
       oferta: '2 X 1  ',
       ubicacion: '',
@@ -115,22 +115,23 @@ function Item(props) {
           sx={{
             letterSpacing: 1,
             fontWeight: 'medium',
-            // padding: 5,
+            mb: '1rem',
             fontSize: 18,
           }}
         >
           <p>{props.item.descripcion}</p>
         </Box>
         <Button
-          sx={{ border: '1px', borderColor: 'white' }}
+          color="primary"
+          variant="outlined"
+          size="large"
           onClick={handleOpen}
         >
           <Box
             sx={{
+              //cambia solo el p al boton
               color: 'white',
               fontSize: 18,
-              // padding: 5,
-              fontWeight: '500',
             }}
           >
             + INFO
