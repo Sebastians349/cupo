@@ -84,7 +84,7 @@ const PruebaBox = props => {
                   <Text
                     textAlign="center"
                     textTransform="uppercase"
-                    fontSize="xl"
+                    fontSize="3xl"
                     fontWeight="semibold"
                   >
                     {' '}

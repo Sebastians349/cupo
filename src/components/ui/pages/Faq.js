@@ -12,6 +12,7 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
   Container,
+  Image,
 } from '@chakra-ui/react';
 
 const Faq = () => {
@@ -104,6 +105,16 @@ const Faq = () => {
                 de CUPOGHLAN. <Spacer /> <br /> Donde encuentra los datos de tu
                 comercio y la oferta que hayas elegido, para poder
                 comunicarse/acercarse directamente, sin intermediarios.
+                <Center>
+                  <Image
+                    p={3}
+                    boxSize="150px"
+                    src="QRokmini.png"
+                    alt="logo de comercio"
+                    objectFit="contain"
+                    fallbackSrc="https://via.placeholder.com/150"
+                  />
+                </Center>
               </Container>
             </AccordionPanel>
           </AccordionItem>
