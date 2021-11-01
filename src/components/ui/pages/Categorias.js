@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stack, Link, Spacer, Heading } from '@chakra-ui/layout';
-import { SimpleGrid, Center } from '@chakra-ui/react';
+import { SimpleGrid, Center, Box } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
@@ -22,7 +22,7 @@ const Categorias = () => {
       </Breadcrumb>
       <Spacer />
 
-      {/*////////////// Carrousel ////////////////*/}
+      {/*//////////////  SECTION Carrousel ////////////////*/}
 
       <Heading
         Heading
@@ -34,16 +34,21 @@ const Categorias = () => {
       >
         Destacados
       </Heading>
-      <Stack
+      {/*////////////// Carrousel ////////////////*/}
+      {/* <Stack
         direction={['column', 'row']}
         spacing="20px"
         justify="center"
         minH="15rem" // CHECK retoque xq el padding dinamico, pusheaba la seccion de abajo. TODO minChildWidth + botones slider
-      >
+      > */}
+      {/* </Stack> */}
+
+      {/* CHECK RD  */}
+      <SimpleGrid columns={[1, null, 3]} spacing="40px" minH="15rem">
         <Carou />
         <Carou2 />
         <Carou3 />
-      </Stack>
+      </SimpleGrid>
 
       {/*////////////// Carrousel ////////////////*/}
 

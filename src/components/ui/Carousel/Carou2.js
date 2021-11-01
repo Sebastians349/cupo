@@ -70,7 +70,7 @@ function Item(props) {
           color: 'whitesmoke',
           borderRadius: 5,
           letterSpacing: 3,
-          padding: 10,
+          padding: 3,
         }}
       >
         <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>

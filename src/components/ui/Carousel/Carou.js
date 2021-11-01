@@ -24,30 +24,64 @@ const style = {
 function Carou(props) {
   const items = [
     {
-      id: 1,
-      name: 'Organiza tu plan!',
-      description: 'Organizadores Magnéticos',
+      logo: '/assets/img/logoplan.png',
+      nombre: 'PLAN!',
+      descripcion: 'organizá tu día',
+      categoria: 'compras',
+      oferta: '50 % OFF ',
+      ubicacion: '',
+      mail: 'plansomos@gmail.com',
+      fb: 'plansomos',
+      ig: 'plansomos',
+      tw: '',
       wapp: '26125615', // plan!
-      oferta: '20 % off',
     },
     {
       id: 2,
-      name: 'Café Martinez',
-      description: 'Expertos en café',
-      wapp: '62868541', //C
-      oferta: '20 % off',
+      nombre: 'CAFE MARTINEZ',
+      descripcion: 'Expertos en cafe',
+      categoria: 'gastronomia',
+      oferta: '35 % OFF ',
+      ubicacion: '',
+      mail: 'plansomos@gmail.com',
+      fb: 'plansomos',
+      ig: 'plansomos',
+      tw: '',
+      wapp: '26125615', // plan!
     },
     {
       id: 3,
-      name: 'Estacion Verde',
-      description: '¡Cosas Ricas!',
-      wapp: '50500147', // es el del GCBA
-      oferta: '20 % off',
+      nombre: 'PURO',
+      descripcion: 'Almacen natura',
+      categoria: 'compras',
+      oferta: '2 X 1  ',
+      ubicacion: '',
+      mail: 'plansomos@gmail.com',
+      fb: 'plansomos',
+      ig: 'plansomos',
+      tw: '',
+      wapp: '26125615', // plan!
     },
   ];
 
   return (
-    <Carousel>
+    <Carousel
+    // CHECK TODO  fullHeightHover={false} // We want the nav buttons wrapper to only be as big as the button element is
+    // navButtonsProps={{
+    //   // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
+    //   style: {
+    //     backgroundColor: 'cornflowerblue',
+    //     borderRadius: 0,
+    //   },
+    // }}
+    // navButtonsWrapperProps={{
+    //   // Move the buttons to the bottom. Unsetting top here to override default style.
+    //   style: {
+    //     bottom: '0',
+    //     top: 'unset',
+    //   },
+    // }}
+    >
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}
@@ -64,6 +98,7 @@ function Item(props) {
   return (
     <Paper elevation={2}>
       <Box
+        // CHECK STYLES PARA EL Carrousel
         sx={{
           backgroundColor: 'rgb(100, 172, 200)',
           textAlign: 'center',
@@ -74,7 +109,7 @@ function Item(props) {
         }}
       >
         <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
-          <h2>{props.item.name}</h2>
+          <h2>{props.item.nombre}</h2>
         </Box>
         <Box
           sx={{
@@ -84,7 +119,7 @@ function Item(props) {
             fontSize: 18,
           }}
         >
-          <p>{props.item.description}</p>
+          <p>{props.item.descripcion}</p>
         </Box>
         <Button
           sx={{ border: '1px', borderColor: 'white' }}
@@ -103,7 +138,7 @@ function Item(props) {
         </Button>
       </Box>
 
-      {/*  ////////// MODAL //////  */}
+      {/*  ////////// MODAL (MUI) //////  */}
       <Box>
         <Modal
           open={open}
