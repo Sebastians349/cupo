@@ -12,7 +12,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '50%',
+  width: '75%',
   minHeight: '50%',
   bgcolor: 'background.paper',
   borderRadius: 4,
@@ -29,7 +29,7 @@ function Carou(props) {
       descripcion: 'organizá tu día',
       categoria: 'compras',
       oferta: '50 % OFF ',
-      ubicacion: '',
+      ubicacion: 'Estomba 2411',
       mail: 'plansomos@gmail.com',
       fb: 'plansomos',
       ig: 'plansomos',
@@ -42,7 +42,7 @@ function Carou(props) {
       descripcion: 'Expertos en cafe',
       categoria: 'gastronomia',
       oferta: '35 % OFF ',
-      ubicacion: '',
+      ubicacion: 'Plaza 3265',
       mail: 'plansomos@gmail.com',
       fb: 'plansomos',
       ig: 'plansomos',
@@ -55,7 +55,7 @@ function Carou(props) {
       descripcion: 'Almacen natural',
       categoria: 'compras',
       oferta: '2 X 1  ',
-      ubicacion: '',
+      ubicacion: 'Superi 1988',
       mail: 'plansomos@gmail.com',
       fb: 'plansomos',
       ig: 'plansomos',
@@ -122,14 +122,17 @@ function Item(props) {
           <p>{props.item.descripcion}</p>
         </Box>
         <Button
+          variant="contained"
+          size="md"
           color="primary"
-          variant="outlined"
-          size="large"
           onClick={handleOpen}
         >
           <Box
             sx={{
               //cambia solo el p al boton
+              borderColor: 'white',
+              border: '1px',
+              borderTop: '10px',
               color: 'white',
               fontSize: 18,
             }}
@@ -156,8 +159,7 @@ function Item(props) {
               variant="h4"
               component="h3"
             >
-              ¡La oferta va acá! <br /> ¡y sigue acá! <br />
-              ¡y acá también!{' '}
+              ¡La oferta va acá! <br /> ¡y sigue acá!
             </Typography>
             <Typography
               id="modal-modal-description"
@@ -168,8 +170,9 @@ function Item(props) {
               <br />
               <br />
               <br />
-              <br />
-              *Promoción solo válida en efectivo / débito{' '}
+              *Promoción solo válida en efectivo / débito <br />
+              {props.item.nombre} <br />
+              {props.item.ubicacion} <br />
             </Typography>
             <Box sx={{ marginTop: '5rem' }}>
               <Redes wapp={props.item.wapp} />
