@@ -21,7 +21,9 @@ const Categorias = () => {
         </BreadcrumbItem>
       </Breadcrumb>
       <Spacer />
-      {/* Carrousel */}
+
+      {/*////////////// Carrousel ////////////////*/}
+
       <Heading
         Heading
         as="h2"
@@ -32,12 +34,20 @@ const Categorias = () => {
       >
         Destacados
       </Heading>
-      <Stack direction={['column', 'row']} spacing="20px" justify="center">
+      <Stack
+        direction={['column', 'row']}
+        spacing="20px"
+        justify="center"
+        minH="15rem" // CHECK retoque xq el padding dinamico, pusheaba la seccion de abajo. TODO minChildWidth + botones slider
+      >
         <Carou />
         <Carou2 />
         <Carou3 />
       </Stack>
-      {/* Carrousel */}
+
+      {/*////////////// Carrousel ////////////////*/}
+
+      {/* ///////////////// CATEGORIAS /////////////////*/}
       <Center pb="10" pt="16">
         <LogoHeader titulo="categorías" as="h1" />
       </Center>
