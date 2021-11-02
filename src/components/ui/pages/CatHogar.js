@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, SimpleGrid, Center } from '@chakra-ui/layout';
+import { Box, SimpleGrid, Center, Container } from '@chakra-ui/layout';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,9 +7,8 @@ import {
 } from '@chakra-ui/breadcrumb';
 import LogoHeader from '../LogoHeader';
 import PruebaBox from '../PruebaBox';
-// import Negocios from '../../data/Negocios';
 
-const CatAlimentos = () => {
+const CatHogar = () => {
   const data = [
     {
       id: 1,
@@ -69,7 +68,7 @@ const CatAlimentos = () => {
     },
   ];
   return (
-    <Box p={5}>
+    <Box p={3}>
       <Breadcrumb>
         <BreadcrumbItem>
           <BreadcrumbLink href="/Home">Home</BreadcrumbLink>
@@ -78,15 +77,13 @@ const CatAlimentos = () => {
           <BreadcrumbLink href="/Categorias">Categorias</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink href="#">Alimentos</BreadcrumbLink>
+          <BreadcrumbLink href="#">Hogar</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
       <Center padding="10">
-        <LogoHeader titulo="Alimentos" />
+        <LogoHeader titulo="Hogar" />
       </Center>
-      {/* <Container maxW="container.xl"> */}
-      <SimpleGrid minChildWidth="150px" spacing="10px" mt={3} p={1}>
-        {/* TODO FIX MEJORAR ESTA FORMA FALOPA DE PASAR DATOS. */}
+      <SimpleGrid minChildWidth="150px" spacing="10px" mt={3}>
         <PruebaBox
           key={data[0].id}
           logo={data[0].logo}
@@ -140,9 +137,8 @@ const CatAlimentos = () => {
         <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
         <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
       </SimpleGrid>
-      {/* </Container> */}
     </Box>
   );
 };
 
-export default CatAlimentos;
+export default CatHogar;

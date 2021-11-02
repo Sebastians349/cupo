@@ -107,11 +107,13 @@ const PruebaBox = props => {
                       <Text mt="1" textAlign="center" fontSize="xs">
                         {props.descripcion} <Spacer />
                         <Link href={maps} textDecor="none" isExternal>
-                          <Icon ml={1} mb={1} w={5} h={5} as={MdLocationOn} />{' '}
+                          <Icon ml={1} mb={1} w={6} h={6} as={MdLocationOn} />{' '}
                         </Link>
                         {props.ubicacion}
                       </Text>
                       <Redes
+                        w={6}
+                        h={6}
                         mail={props.mail}
                         wapp={props.wapp}
                         tw={props.tw}
@@ -128,7 +130,7 @@ const PruebaBox = props => {
           </Center>
           <Spacer />
           <Text
-            mt="3"
+            mt="1"
             pt="1"
             fontWeight="semibold"
             textAlign="center"

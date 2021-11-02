@@ -67,12 +67,8 @@ const Categorias = () => {
         <Link as={ReachLink} to="/CatIndum" _hover={{ textDecoration: 'none' }}>
           <CategBox categ="indumentaria" foto="indu.jpg" />
         </Link>
-        <Link
-          as={ReachLink}
-          to="/CatCompras"
-          _hover={{ textDecoration: 'none' }}
-        >
-          <CategBox categ="compras" foto="compras.jpg" />
+        <Link as={ReachLink} to="/CatHogar" _hover={{ textDecoration: 'none' }}>
+          <CategBox categ="Hogar" foto="compras.jpg" />
         </Link>
         <Link
           as={ReachLink}
