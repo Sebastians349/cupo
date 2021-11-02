@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, SimpleGrid, Center, Container } from '@chakra-ui/layout';
+import { Box, SimpleGrid, Center } from '@chakra-ui/layout';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -83,62 +83,60 @@ const CatOtros = () => {
       <Center padding="10">
         <LogoHeader titulo="Otros rubros" />
       </Center>
-      <Container maxW="container.xl">
-        <SimpleGrid minChildWidth="175px" spacing="10px" mt={3}>
-          <PruebaBox
-            key={data[0].id}
-            logo={data[0].logo}
-            nombre={data[0].nombre}
-            descripcion={data[0].descripcion}
-            oferta={data[0].oferta}
-            ubicacion={data[0].ubicacion}
-            mail={data[0].mail}
-            tw={data[0].tw}
-            fb={data[0].fb}
-            ig={data[0].ig}
-            wapp={data[0].wapp}
-          />
-          <PruebaBox
-            key={data[1].id}
-            logo={data[1].logo}
-            nombre={data[1].nombre}
-            descripcion={data[1].descripcion}
-            oferta={data[1].oferta}
-            ubicacion={data[1].ubicacion}
-            mail={data[1].mail}
-            tw={data[1].tw}
-            fb={data[1].fb}
-            ig={data[1].ig}
-            wapp={data[1].wapp}
-          />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-          <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        </SimpleGrid>
-      </Container>
+      <SimpleGrid minChildWidth="150px" spacing="10px" mt={3} p={1}>
+        <PruebaBox
+          key={data[0].id}
+          logo={data[0].logo}
+          nombre={data[0].nombre}
+          descripcion={data[0].descripcion}
+          oferta={data[0].oferta}
+          ubicacion={data[0].ubicacion}
+          mail={data[0].mail}
+          tw={data[0].tw}
+          fb={data[0].fb}
+          ig={data[0].ig}
+          wapp={data[0].wapp}
+        />
+        <PruebaBox
+          key={data[1].id}
+          logo={data[1].logo}
+          nombre={data[1].nombre}
+          descripcion={data[1].descripcion}
+          oferta={data[1].oferta}
+          ubicacion={data[1].ubicacion}
+          mail={data[1].mail}
+          tw={data[1].tw}
+          fb={data[1].fb}
+          ig={data[1].ig}
+          wapp={data[1].wapp}
+        />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+      </SimpleGrid>
     </Box>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, SimpleGrid, Center, Container } from '@chakra-ui/layout';
+import { Box, SimpleGrid, Center } from '@chakra-ui/layout';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -83,7 +83,7 @@ const CatHogar = () => {
       <Center padding="10">
         <LogoHeader titulo="Hogar" />
       </Center>
-      <SimpleGrid minChildWidth="150px" spacing="10px" mt={3}>
+      <SimpleGrid minChildWidth="150px" spacing="10px" mt={3} p={1}>
         <PruebaBox
           key={data[0].id}
           logo={data[0].logo}

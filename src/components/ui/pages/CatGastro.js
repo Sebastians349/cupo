@@ -84,7 +84,7 @@ const CatGAstro = () => {
         <LogoHeader titulo="Gastronomía" />
       </Center>
       <Container maxW="container.xl">
-        <SimpleGrid minChildWidth="175px" spacing="10px" mt={3}>
+        <SimpleGrid minChildWidth="175px" spacing="10px" mt={3} p={1}>
           <PruebaBox
             key={data[0].id}
             logo={data[0].logo}
