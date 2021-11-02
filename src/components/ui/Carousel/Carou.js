@@ -5,6 +5,7 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
 import Redes from '../Redes';
+import QuiltedImageList from '../Carousel/QuiltedImageList';
 
 const style = {
   // CHECK style para el modal
@@ -12,7 +13,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '75%',
+  width: '50%',
   minHeight: '50%',
   bgcolor: 'background.paper',
   borderRadius: 4,
@@ -98,50 +99,62 @@ function Item(props) {
   return (
     <Paper elevation={2}>
       <Box
-        // CHECK STYLES PARA EL Carrousel
+        //wrappea los box del carousel
         sx={{
-          backgroundColor: 'rgb(100, 172, 200)',
-          textAlign: 'center',
-          color: 'whitesmoke',
+          display: 'flex',
+          flexDirection: 'row',
           borderRadius: 5,
-          letterSpacing: 3,
-          padding: 10,
         }}
       >
-        <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
-          <h2>{props.item.nombre}</h2>
-        </Box>
+        {/* //wrappea los box del carousel */}
         <Box
+          // CHECK main y donde va el modal button
           sx={{
-            letterSpacing: 1,
-            fontWeight: 'medium',
-            mb: '1rem',
-            fontSize: 18,
+            backgroundColor: 'rgb(100, 172, 200)',
+            textAlign: 'center',
+            color: 'whitesmoke',
+            letterSpacing: 3,
+            padding: 10,
           }}
         >
-          <p>{props.item.descripcion}</p>
-        </Box>
-        <Button
-          variant="contained"
-          size="md"
-          color="primary"
-          onClick={handleOpen}
-        >
+          <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
+            <h2>{props.item.nombre}</h2>
+          </Box>
           <Box
             sx={{
-              //cambia solo el p al boton
-              borderColor: 'white',
-              border: '1px',
-              borderTop: '10px',
-              color: 'white',
+              letterSpacing: 1,
+              fontWeight: 'medium',
+              mb: '1rem',
               fontSize: 18,
             }}
           >
-            + INFO
+            <p>{props.item.descripcion}</p>
           </Box>
-        </Button>
-      </Box>
+          <Button
+            variant="contained"
+            size="md"
+            color="primary"
+            onClick={handleOpen}
+          >
+            <Box
+              sx={{
+                //cambia solo el p al boton
+                borderColor: 'white',
+                border: '1px',
+                borderTop: '10px',
+                color: 'white',
+                fontSize: 18,
+              }}
+            >
+              + INFO
+            </Box>
+          </Button>
+        </Box>
+        {/* ////////////FIN MAIN /////////  */}
 
+        <QuiltedImageList />
+      </Box>{' '}
+      {/* CHECK //wrappea los box del carousel */}
       {/*  ////////// MODAL (MUI) //////  */}
       <Box>
         <Modal
