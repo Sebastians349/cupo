@@ -1,6 +1,6 @@
 import React from 'react';
 import { Stack, Link, Spacer, Heading } from '@chakra-ui/layout';
-import { SimpleGrid, Center, Box } from '@chakra-ui/react';
+import { SimpleGrid, Center } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
@@ -56,7 +56,7 @@ const Categorias = () => {
       <Center pb="10" pt="16">
         <LogoHeader titulo="categorías" as="h1" />
       </Center>
-      <SimpleGrid minChildWidth="420px" spacing="40px">
+      <SimpleGrid minChildWidth="275px" spacing="40px">
         <Link
           as={ReachLink}
           to="/CatAlimentos"
