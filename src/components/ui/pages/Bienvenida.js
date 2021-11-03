@@ -18,7 +18,11 @@ const Bienvenida = () => {
     >
       <Center>
         <Link as={ReachLink} to="/Categorias">
-          <Image src="logoclarito.png " _hover={{ opacity: 0.7 }}></Image>
+          <Image
+            loading="lazy"
+            src="logoclarito.png "
+            _hover={{ opacity: 0.7 }}
+          ></Image>
         </Link>
       </Center>
     </Box>

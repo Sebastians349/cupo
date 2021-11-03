@@ -5,8 +5,8 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
 import Redes from '../Redes';
-import QuiltedImageList from '../Carousel/QuiltedImageList';
-
+// import QuiltedImageList from '../Carousel/QuiltedImageList';
+import Image from 'material-ui-image';
 const style = {
   // CHECK style para el modal
   position: 'absolute',
@@ -36,6 +36,7 @@ function Carou(props) {
       ig: 'plansomos',
       tw: '',
       wapp: '26125615', // plan!
+      img: '5.jpg',
     },
     {
       id: 2,
@@ -49,6 +50,7 @@ function Carou(props) {
       ig: 'plansomos',
       tw: '',
       wapp: '26125615', // plan!
+      img: '3.jpg',
     },
     {
       id: 3,
@@ -62,26 +64,20 @@ function Carou(props) {
       ig: 'plansomos',
       tw: '',
       wapp: '26125615', // plan!
+      img: '4.jpg',
     },
   ];
 
   return (
     <Carousel
-    // CHECK TODO  fullHeightHover={false} // We want the nav buttons wrapper to only be as big as the button element is
-    // navButtonsProps={{
-    //   // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
-    //   style: {
-    //     backgroundColor: 'cornflowerblue',
-    //     borderRadius: 0,
-    //   },
-    // }}
-    // navButtonsWrapperProps={{
-    //   // Move the buttons to the bottom. Unsetting top here to override default style.
-    //   style: {
-    //     bottom: '0',
-    //     top: 'unset',
-    //   },
-    // }}
+      // CHECK TODO  fullHeightHover={false} // We want the nav buttons wrapper to only be as big as the button element is
+      navButtonsProps={{
+        // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
+        style: {
+          backgroundColor: 'rgb(206, 126, 120)',
+        },
+      }}
+      //
     >
       {items.map((item, i) => (
         <Item key={i} item={item} />
@@ -99,62 +95,54 @@ function Item(props) {
   return (
     <Paper elevation={2}>
       <Box
-        //wrappea los box del carousel
+        // CHECK main y donde va el modal button
         sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          borderRadius: 5,
+          backgroundColor: 'rgb(206, 126, 120)', //TODO PASARLE COLORES
+          textAlign: 'center',
+          color: 'whitesmoke',
+          letterSpacing: 3,
+          padding: 10,
         }}
       >
-        {/* //wrappea los box del carousel */}
+        <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
+          <h2>{props.item.nombre}</h2>
+        </Box>
         <Box
-          // CHECK main y donde va el modal button
           sx={{
-            backgroundColor: 'rgb(100, 172, 200)',
-            textAlign: 'center',
-            color: 'whitesmoke',
-            letterSpacing: 3,
-            padding: 10,
+            letterSpacing: 1,
+            fontWeight: 'medium',
+            mb: '1rem',
+            fontSize: 18,
           }}
         >
-          <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
-            <h2>{props.item.nombre}</h2>
-          </Box>
+          <p>{props.item.descripcion}</p>
+        </Box>
+        <Button
+          variant="outlined"
+          size="small"
+          color="primary"
+          onClick={handleOpen}
+        >
           <Box
             sx={{
-              letterSpacing: 1,
-              fontWeight: 'medium',
-              mb: '1rem',
+              //cambia solo el p al boton
+              borderColor: 'white',
+              border: '1px',
+              borderTop: '10px',
+              color: 'white',
               fontSize: 18,
             }}
           >
-            <p>{props.item.descripcion}</p>
+            + INFO
           </Box>
-          <Button
-            variant="contained"
-            size="md"
-            color="primary"
-            onClick={handleOpen}
-          >
-            <Box
-              sx={{
-                //cambia solo el p al boton
-                borderColor: 'white',
-                border: '1px',
-                borderTop: '10px',
-                color: 'white',
-                fontSize: 18,
-              }}
-            >
-              + INFO
-            </Box>
-          </Button>
-        </Box>
-        {/* ////////////FIN MAIN /////////  */}
+        </Button>
+      </Box>
+      <Image src={props.item.img} aspectRatio={16 / 9} />
 
-        <QuiltedImageList />
-      </Box>{' '}
-      {/* CHECK //wrappea los box del carousel */}
+      {/* ////////////FIN MAIN /////////  */}
+
+      {/* <QuiltedImageList img={props.item.img} /> */}
+
       {/*  ////////// MODAL (MUI) //////  */}
       <Box>
         <Modal
