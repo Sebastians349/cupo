@@ -41,14 +41,10 @@ const Categorias = () => {
         justify="center"
         minW="10rem" // CHECK retoque xq el padding dinamico, pusheaba la seccion de abajo. TODO minChildWidth + botones slider
       >
-        {/* <SimpleGrid columns={[1, null, 3]} spacing="40px" minH="15rem"> */}
         <Container>
           <Carou />
         </Container>
       </Stack>
-      {/* <Carou2 />
-        <Carou3 /> */}
-      {/* </SimpleGrid> */}
 
       {/*////////////// Carrousel ////////////////*/}
 

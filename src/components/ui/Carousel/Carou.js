@@ -37,6 +37,7 @@ function Carou(props) {
       tw: '',
       wapp: '26125615', // plan!
       img: '5.jpg',
+      color: 'rgb(206, 126, 120)',
     },
     {
       id: 2,
@@ -51,6 +52,7 @@ function Carou(props) {
       tw: '',
       wapp: '26125615', // plan!
       img: '3.jpg',
+      color: 'rgb(100, 172, 200)',
     },
     {
       id: 3,
@@ -65,14 +67,14 @@ function Carou(props) {
       tw: '',
       wapp: '26125615', // plan!
       img: '4.jpg',
+      color: 'rgb(125, 133, 177)',
     },
   ];
 
   return (
     <Carousel
-      // CHECK TODO  fullHeightHover={false} // We want the nav buttons wrapper to only be as big as the button element is
       navButtonsProps={{
-        // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
+        // COLOR Change  and radius of the actual buttons. THIS STYLES BOTH BUTTONS
         style: {
           backgroundColor: 'rgb(206, 126, 120)',
         },
@@ -97,11 +99,12 @@ function Item(props) {
       <Box
         // CHECK main y donde va el modal button
         sx={{
-          backgroundColor: 'rgb(206, 126, 120)', //TODO PASARLE COLORES
+          backgroundColor: '#005E87', //FONDO CAROU COLOR
           textAlign: 'center',
-          color: 'whitesmoke',
+          color: 'white',
           letterSpacing: 3,
           padding: 10,
+          borderRadius: 5,
         }}
       >
         <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
@@ -117,18 +120,10 @@ function Item(props) {
         >
           <p>{props.item.descripcion}</p>
         </Box>
-        <Button
-          variant="outlined"
-          size="small"
-          color="primary"
-          onClick={handleOpen}
-        >
+        <Button variant="outlined" size="small" onClick={handleOpen}>
           <Box
             sx={{
-              //cambia solo el p al boton
-              borderColor: 'white',
-              border: '1px',
-              borderTop: '10px',
+              //cambia solo el texto <p></p> del boton
               color: 'white',
               fontSize: 18,
             }}
@@ -137,7 +132,11 @@ function Item(props) {
           </Box>
         </Button>
       </Box>
-      <Image src={props.item.img} aspectRatio={16 / 9} />
+      <Image
+        src={props.item.img}
+        aspectRatio={16 / 9}
+        imageStyle={{ borderRadius: '3px' }}
+      />
 
       {/* ////////////FIN MAIN /////////  */}
 

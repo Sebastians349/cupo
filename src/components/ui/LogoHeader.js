@@ -7,7 +7,7 @@ const LogoHeader = props => {
     <HStack p={1}>
       <Image
         boxSize="50px"
-        src="logoposta.png"
+        src="logocupoazultrans.png"
         objectFit="cover"
         fallbackSrc="https://via.placeholder.com/50"
       />
