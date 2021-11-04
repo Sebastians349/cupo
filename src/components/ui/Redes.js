@@ -31,7 +31,7 @@ const Redes = props => {
         </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Facebook">
-        <Link href={fb}>
+        <Link href={fb} isExternal="true">
           <IconButton
             aria-label="Search database"
             variant="ghost"
@@ -40,7 +40,7 @@ const Redes = props => {
         </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Instagram">
-        <Link href={ig}>
+        <Link href={ig} isExternal>
           <IconButton
             aria-label="Search database"
             variant="ghost"

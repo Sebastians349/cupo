@@ -39,7 +39,7 @@ function Carou(props) {
       descripcion: 'organizá tu día',
       categoria: 'compras',
       oferta: '50 % OFF ',
-      ubicacion: 'Estomba 2411',
+      ubicacion: 'Romulo Naon',
       mail: 'plansomos@gmail.com',
       fb: 'organizatuplan',
       ig: 'organizatuplan',
@@ -55,12 +55,12 @@ function Carou(props) {
       descripcion: 'Café, flores y cosas ricas',
       categoria: 'gastronomia',
       oferta: '35 % OFF ',
-      ubicacion: 'Plaza 3265 ',
-      mail: 'plansomos@gmail.com',
-      fb: 'plansomos',
-      ig: 'plansomos',
+      ubicacion: 'Estomba 2651 ',
+      mail: '',
+      fb: 'estacionverdecoghlan',
+      ig: 'estacionverdecoghlan',
       tw: '',
-      wapp: '26125615', // plan!
+      wapp: '',
       img: 'verde1.png',
       // color: 'rgb(100, 172, 200)',
     },
@@ -71,10 +71,10 @@ function Carou(props) {
       descripcion: 'Almacen natural',
       categoria: 'alimentos',
       oferta: '2 X 1  ',
-      ubicacion: 'Superi 1988',
-      mail: 'plansomos@gmail.com',
-      fb: '',
-      ig: '',
+      ubicacion: 'Romulo Naon 2323',
+      mail: '',
+      fb: 'almacennaturalpuro',
+      ig: 'almacennaturalpuro',
       tw: '',
       wapp: '26125615', // plan!
       img: 'puro2.png',
@@ -88,9 +88,9 @@ function Carou(props) {
       categoria: 'gastronomía',
       oferta: '2 X 1  ',
       ubicacion: 'Superí 3002',
-      mail: 'plansomos@gmail.com',
-      fb: 'plansomos',
-      ig: 'plansomos',
+      mail: '',
+      fb: '',
+      ig: '',
       tw: '',
       wapp: '3298-9416',
       img: 'agrado1.jpg',
@@ -210,7 +210,7 @@ function Item(props) {
             >
               <Image src={props.item.logo} />
             </Box>
-            <Box sx={{ marginTop: '1rem' }}>
+            <Box sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
               {props.item.nombre} <br />
               <Icon>location_on</Icon>
               <br />
