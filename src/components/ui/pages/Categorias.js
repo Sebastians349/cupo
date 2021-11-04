@@ -1,12 +1,12 @@
 import React from 'react';
 import { Stack, Link, Spacer, Heading } from '@chakra-ui/layout';
-import { SimpleGrid, Center, Box } from '@chakra-ui/react';
+import { SimpleGrid, Center, Container } from '@chakra-ui/react';
 import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
-import Carou2 from '../Carousel/Carou2';
-import Carou3 from '../Carousel/Carou3';
+// import Carou2 from '../Carousel/Carou2';
+// import Carou3 from '../Carousel/Carou3';
 import Carou from '../Carousel/Carou';
 
 const Categorias = () => {
@@ -35,20 +35,16 @@ const Categorias = () => {
         Destacados
       </Heading>
       {/*////////////// Carrousel ////////////////*/}
-      {/* <Stack
+      <Stack
         direction={['column', 'row']}
         spacing="20px"
         justify="center"
-        minH="15rem" // CHECK retoque xq el padding dinamico, pusheaba la seccion de abajo. TODO minChildWidth + botones slider
-      > */}
-      {/* </Stack> */}
-
-      {/* CHECK RD  */}
-      <SimpleGrid columns={[1, null, 3]} spacing="40px" minH="15rem">
-        <Carou />
-        <Carou2 />
-        <Carou3 />
-      </SimpleGrid>
+        minW="10rem" // CHECK retoque xq el padding dinamico, pusheaba la seccion de abajo. TODO minChildWidth + botones slider
+      >
+        <Container>
+          <Carou />
+        </Container>
+      </Stack>
 
       {/*////////////// Carrousel ////////////////*/}
 
@@ -56,7 +52,7 @@ const Categorias = () => {
       <Center pb="10" pt="16">
         <LogoHeader titulo="categorías" as="h1" />
       </Center>
-      <SimpleGrid minChildWidth="420px" spacing="40px">
+      <SimpleGrid minChildWidth="275px" spacing="40px">
         <Link
           as={ReachLink}
           to="/CatAlimentos"
@@ -67,12 +63,8 @@ const Categorias = () => {
         <Link as={ReachLink} to="/CatIndum" _hover={{ textDecoration: 'none' }}>
           <CategBox categ="indumentaria" foto="indu.jpg" />
         </Link>
-        <Link
-          as={ReachLink}
-          to="/CatCompras"
-          _hover={{ textDecoration: 'none' }}
-        >
-          <CategBox categ="compras" foto="compras.jpg" />
+        <Link as={ReachLink} to="/CatHogar" _hover={{ textDecoration: 'none' }}>
+          <CategBox categ="Hogar" foto="compras.jpg" />
         </Link>
         <Link
           as={ReachLink}
@@ -86,6 +78,9 @@ const Categorias = () => {
         </Link>
         <Link as={ReachLink} to="/CatOtros" _hover={{ textDecoration: 'none' }}>
           <CategBox categ="otros rubros" foto="otros.jpg" />
+        </Link>
+        <Link as={ReachLink} to="/CatProx" _hover={{ textDecoration: 'none' }}>
+          <CategBox categ="Proximamente" foto="2.jpg" />
         </Link>
       </SimpleGrid>
       <Spacer />

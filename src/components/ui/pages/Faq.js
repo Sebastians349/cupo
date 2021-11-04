@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Center, Spacer } from '@chakra-ui/layout';
+import { Stack, Center, Spacer, UnorderedList, Text } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
 import {
   Accordion,
@@ -13,7 +13,11 @@ import {
   BreadcrumbLink,
   Container,
   Image,
+  List,
+  ListItem,
+  ListIcon,
 } from '@chakra-ui/react';
+import { MdCheckCircle } from 'react-icons/md';
 
 const Faq = () => {
   return (
@@ -98,13 +102,13 @@ const Faq = () => {
             <AccordionPanel pb={4}>
               <Container textAlign="justify">
                 Ingresamos los datos que nos brindes (junto con tu oferta) y te
-                asaignamos GRATIS un espacio en la web, segun tu categoria.
+                asignamos GRATIS un espacio en la web, según tu rubro.
                 <Spacer /> <br />
                 Te dejamos un QR para que exhibas en la vidriera de tu local.
                 Cualquier persona, al escanearlo, tiene acceso directo a la web
-                de CUPOGHLAN. <Spacer /> <br /> Donde encuentra los datos de tu
-                comercio y la oferta que hayas elegido, para poder
-                comunicarse/acercarse directamente, sin intermediarios.
+                de CUPOGHLAN. <Spacer /> <br /> Allí, van a encontrar los datos
+                de tu comercio y la oferta que hayas elegido, para poder
+                comunicarse / acercarse directamente, sin intermediarios.
                 <Center>
                   <Image
                     p={3}
@@ -155,6 +159,99 @@ const Faq = () => {
                   flex="1"
                   textAlign="left"
                 >
+                  cómo formar parte{' '}
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <Container textAlign="justify">
+                Fácil. Nos envias un mail con estos datos: <Spacer />
+                <br />
+                <List spacing={3}>
+                  <ListItem>
+                    <ListIcon as={MdCheckCircle} color="green.500" />
+                    <strong>Nombre de tu comercio.</strong>
+                    <br />
+                    Nombre de tu local y ubicación exacta.{' '}
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={MdCheckCircle} color="green.500" />
+                    <strong>Categoría/Rubro.</strong> <br />
+                    Ejemplo Categoría: Alimentos - Actividades - Indumentaria -
+                    Hogar-Gastronomia - Otros rubros. <br /> Este último si no
+                    entrás en las otras. <br /> Próximamente, más categorías.{' '}
+                    <br />
+                    Ejemplo Rubro: Pastelería, Ferretería, etc.{' '}
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={MdCheckCircle} color="green.500" />
+                    <strong>Descripción/Bajada nombre.</strong> <br />
+                    Ej: "Cosas muy ricas", en la descripcion junto con el rubro.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={MdCheckCircle} color="green.500" />
+                    <strong>Logo del negocio</strong>. <br />
+                    Adjuntado en el mail. En formato .PNG Máximo 160 x 160 (px)
+                    y con buena resolución. (no blureado) <br /> Para que tu
+                    marca se vea perfecta.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={MdCheckCircle} color="green.500" />
+                    <strong>Redes sociales.</strong> <br /> Las que tengas. Web,
+                    Facebook, Instagram, Twitter y Whatsapp. <Spacer />
+                    <br />
+                    Este último, fundamental, ya que linkea directo con la App
+                    para mensajearte. (no hace falta que nos brindes el +54 9 11
+                    . Sólo los últimos 8 numeros )
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={MdCheckCircle} color="green.500" />
+                    <strong>La oferta y detalle de la misma. </strong>
+                    <br />
+                    Si tiene valor($), con fecha de caducidad o stock. Si es en
+                    efectivo, débito u otro método de pago.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={MdCheckCircle} color="green.500" />
+                    <strong>Opcionales</strong>
+                    <br />
+                    <UnorderedList>
+                      <ListItem>Nombre.</ListItem>{' '}
+                      <ListItem>
+                        Whatsapp (no te agendamos, ni te agregamos a ningún
+                        grupo, ni te enviamos mensajes)
+                      </ListItem>
+                      <ListItem>Telefono comercial.</ListItem>{' '}
+                      <ListItem>Cuit del local.</ListItem> <br />
+                    </UnorderedList>
+                    Estos datos son para seguridad y validación de identidad del
+                    comercio en la carga de datos.{' '}
+                    <Text as="mark">
+                      El usuario NO va a verlos. Ni se suben a la base de datos
+                      / repositorio.
+                    </Text>{' '}
+                    <Spacer />
+                    <br />
+                    Lo ideal es que la primera vez nos mandes el mail ,nos
+                    avises por dm en Instagram para validar al comercio.
+                    <Spacer /> <br /> Si en el momento de la carga /
+                    actualización de datos , no podemos validar la identidad, no
+                    actualizamos lo solicitado en nuestra web.
+                  </ListItem>
+                </List>
+              </Container>
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box
+                  textTransform="uppercase"
+                  fontWeight="semibold"
+                  flex="1"
+                  textAlign="left"
+                >
                   quiénes forman parte{' '}
                 </Box>
                 <AccordionIcon />
@@ -188,11 +285,7 @@ const Faq = () => {
                 el QR que te llevemos.
                 <Spacer /> <br /> Nuestro equipo financia los gastos de la web y
                 desarrollo con las publicaciones destacadas, el aporte de
-                sponsors y los paquetes personalizados que ofrecemos. <Spacer />{' '}
-                <br />
-                Tampoco vendemos la base de datos. Ni de los comercios, ni de
-                los/as usuarios/as ya que no solicitamos ningún tipo de
-                login/ingreso al portal.
+                sponsors y los paquetes personalizados que ofrecemos.
               </Container>
             </AccordionPanel>
           </AccordionItem>
@@ -216,8 +309,10 @@ const Faq = () => {
                 nuestras horas libres tratando de suplir todas las demandas en
                 el menor tiempo posible. <Spacer /> <br />
                 Solicitamos paciencia si una carga de datos no se ve reflejada
-                rápidamente, nuestro objetivo es que todo esté actualizado en
-                menos de 48 h hábiles.
+                rápidamente, nuestro objetivo es que todo esté actualizado en el
+                menor tiempo posible. <Spacer /> <br />
+                En el transcurso de la semana actualizamos la web. Y vas a poder
+                verlo reflejado.
               </Container>
             </AccordionPanel>
           </AccordionItem>

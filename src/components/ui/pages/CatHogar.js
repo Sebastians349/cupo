@@ -8,7 +8,7 @@ import {
 import LogoHeader from '../LogoHeader';
 import PruebaBox from '../PruebaBox';
 
-const CatOtros = () => {
+const CatHogar = () => {
   const data = [
     {
       id: 1,
@@ -77,11 +77,11 @@ const CatOtros = () => {
           <BreadcrumbLink href="/Categorias">Categorias</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem isCurrentPage>
-          <BreadcrumbLink href="#">Otros rubros</BreadcrumbLink>
+          <BreadcrumbLink href="#">Hogar</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
       <Center padding="10">
-        <LogoHeader titulo="Otros rubros" />
+        <LogoHeader titulo="Hogar" />
       </Center>
       <SimpleGrid minChildWidth="150px" spacing="10px" mt={3} p={1}>
         <PruebaBox
@@ -141,4 +141,4 @@ const CatOtros = () => {
   );
 };
 
-export default CatOtros;
+export default CatHogar;

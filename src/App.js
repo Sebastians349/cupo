@@ -13,11 +13,12 @@ import Contacto from './components/ui/pages/Contacto';
 import Footer from './components/ui/containers/Footer';
 import Sponsors from './components/ui/pages/Sponsors';
 import CatAlimentos from './components/ui/pages/CatAlimentos';
-import CatCompras from './components/ui/pages/CatCompras';
+import CatHogar from './components/ui/pages/CatHogar';
 import CatIndum from './components/ui/pages/CatIndum';
 import CatGastro from './components/ui/pages/CatGastro';
 import CatActiv from './components/ui/pages/CatActiv';
 import CatOtros from './components/ui/pages/CatOtros';
+import CatProx from './components/ui/pages/CatProx';
 
 function App() {
   return (
@@ -46,8 +47,8 @@ function App() {
         <Route path="/CatAlimentos">
           <CatAlimentos />
         </Route>
-        <Route path="/CatCompras">
-          <CatCompras />
+        <Route path="/CatHogar">
+          <CatHogar />
         </Route>
         <Route path="/CatIndum">
           <CatIndum />
@@ -63,6 +64,9 @@ function App() {
         </Route>
         <Route path="/Sponsors">
           <Sponsors />
+        </Route>
+        <Route path="/CatProx">
+          <CatProx />
         </Route>
         {/* CHECK POR QUÉ NO RUTEA SI PONGO EL COMPO ARRIBA */}
         <Bienvenida />

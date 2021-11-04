@@ -3,8 +3,17 @@
 
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
+import {
+  Paper,
+  Button,
+  Box,
+  Typography,
+  Modal,
+  Link,
+  Icon,
+} from '@material-ui/core';
 import Redes from '../Redes';
+import Image from 'material-ui-image';
 
 const style = {
   // CHECK style para el modal
@@ -12,7 +21,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '75%',
+  width: '50%',
   minHeight: '50%',
   bgcolor: 'background.paper',
   borderRadius: 4,
@@ -24,63 +33,80 @@ const style = {
 function Carou(props) {
   const items = [
     {
-      logo: '/assets/img/logoplan.png',
+      id: 1,
+      logo: 'assets/img/logoplan.png',
       nombre: 'PLAN!',
       descripcion: 'organizá tu día',
       categoria: 'compras',
       oferta: '50 % OFF ',
-      ubicacion: 'Estomba 2411',
+      ubicacion: 'Romulo Naon',
       mail: 'plansomos@gmail.com',
-      fb: 'plansomos',
-      ig: 'plansomos',
+      fb: 'organizatuplan',
+      ig: 'organizatuplan',
       tw: '',
       wapp: '26125615', // plan!
+      img: 'plan1.png',
+      // color: 'rgb(206, 126, 120)',
     },
     {
       id: 2,
-      nombre: 'CAFE MARTINEZ',
-      descripcion: 'Expertos en cafe',
+      logo: 'logo192.png',
+      nombre: 'ESTACIÓN VERDE',
+      descripcion: 'Café, flores y cosas ricas',
       categoria: 'gastronomia',
       oferta: '35 % OFF ',
-      ubicacion: 'Plaza 3265',
-      mail: 'plansomos@gmail.com',
-      fb: 'plansomos',
-      ig: 'plansomos',
+      ubicacion: 'Estomba 2651 ',
+      mail: '',
+      fb: 'estacionverdecoghlan',
+      ig: 'estacionverdecoghlan',
       tw: '',
-      wapp: '26125615', // plan!
+      wapp: '',
+      img: 'verde1.png',
+      // color: 'rgb(100, 172, 200)',
     },
     {
       id: 3,
+      logo: 'logo192.png',
       nombre: 'PURO',
       descripcion: 'Almacen natural',
-      categoria: 'compras',
+      categoria: 'alimentos',
       oferta: '2 X 1  ',
-      ubicacion: 'Superi 1988',
-      mail: 'plansomos@gmail.com',
-      fb: 'plansomos',
-      ig: 'plansomos',
+      ubicacion: 'Romulo Naon 2323',
+      mail: '',
+      fb: 'almacennaturalpuro',
+      ig: 'almacennaturalpuro',
       tw: '',
       wapp: '26125615', // plan!
+      img: 'puro2.png',
+      // color: 'rgb(125, 133, 177)',
+    },
+    {
+      id: 4,
+      logo: 'logo512.png',
+      nombre: 'AGRADO',
+      descripcion: 'Cafetería',
+      categoria: 'gastronomía',
+      oferta: '2 X 1  ',
+      ubicacion: 'Superí 3002',
+      mail: '',
+      fb: '',
+      ig: '',
+      tw: '',
+      wapp: '3298-9416',
+      img: 'agrado1.jpg',
+      // color: 'rgb(125, 133, 177)',
     },
   ];
 
   return (
     <Carousel
-    // CHECK TODO  fullHeightHover={false} // We want the nav buttons wrapper to only be as big as the button element is
-    // navButtonsProps={{
-    //   // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
-    //   style: {
-    //     backgroundColor: 'cornflowerblue',
-    //     borderRadius: 0,
-    //   },
-    // }}
-    // navButtonsWrapperProps={{
-    //   // Move the buttons to the bottom. Unsetting top here to override default style.
-    //   style: {
-    //     bottom: '0',
-    //     top: 'unset',
-    //   },
-    // }}
+      navButtonsProps={{
+        // COLOR Change  and radius of the actual buttons. THIS STYLES BOTH BUTTONS
+        style: {
+          backgroundColor: '#005E87',
+        },
+      }}
+      //
     >
       {items.map((item, i) => (
         <Item key={i} item={item} />
@@ -95,17 +121,20 @@ function Item(props) {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  // misma logica que en <redes/> para pasarle props.
+  const maps = 'https://www.google.com/maps/search/' + props.item.ubicacion;
+
   return (
     <Paper elevation={2}>
       <Box
-        // CHECK STYLES PARA EL Carrousel
+        // CHECK main y donde va el modal button
         sx={{
-          backgroundColor: 'rgb(100, 172, 200)',
+          backgroundColor: '#005E87', //FONDO CAROU COLOR
           textAlign: 'center',
-          color: 'whitesmoke',
-          borderRadius: 5,
+          color: 'white',
           letterSpacing: 3,
           padding: 10,
+          borderRadius: 5,
         }}
       >
         <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
@@ -121,18 +150,10 @@ function Item(props) {
         >
           <p>{props.item.descripcion}</p>
         </Box>
-        <Button
-          variant="contained"
-          size="md"
-          color="primary"
-          onClick={handleOpen}
-        >
+        <Button variant="outlined" size="small" onClick={handleOpen}>
           <Box
             sx={{
-              //cambia solo el p al boton
-              borderColor: 'white',
-              border: '1px',
-              borderTop: '10px',
+              //cambia solo el texto <p></p> del boton
               color: 'white',
               fontSize: 18,
             }}
@@ -141,6 +162,15 @@ function Item(props) {
           </Box>
         </Button>
       </Box>
+      <Image
+        src={props.item.img}
+        aspectRatio={16 / 9}
+        imageStyle={{ borderRadius: '3px' }}
+      />
+
+      {/* ////////////FIN MAIN /////////  */}
+
+      {/* Prueba quilted <QuiltedImageList img={props.item.img} /> */}
 
       {/*  ////////// MODAL (MUI) //////  */}
       <Box>
@@ -166,16 +196,34 @@ function Item(props) {
               variant="body2"
               component="h4"
             >
-              <br />
-              <br />
-              <br />
-              <br />
               *Promoción solo válida en efectivo / débito <br />
-              {props.item.nombre} <br />
-              {props.item.ubicacion} <br />
             </Typography>
-            <Box sx={{ marginTop: '5rem' }}>
-              <Redes wapp={props.item.wapp} />
+            {/* CHECK /////////////////// logo Modal */}
+            <Box
+              sx={{
+                maxWidth: '160px',
+                textAlign: 'center',
+                marginRight: 'auto  ',
+                marginLeft: 'auto  ',
+                paddingTop: '10px',
+              }}
+            >
+              <Image src={props.item.logo} />
+            </Box>
+            <Box sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
+              {props.item.nombre} <br />
+              <Icon>location_on</Icon>
+              <br />
+              <Link href={maps} target="_blank" rel="noopener">
+                {props.item.ubicacion}
+              </Link>{' '}
+              <Redes
+                wapp={props.item.wapp}
+                mail={props.item.mail}
+                fb={props.item.fb}
+                ig={props.item.ig}
+                tw={props.item.tw}
+              />
             </Box>
           </Box>
         </Modal>
