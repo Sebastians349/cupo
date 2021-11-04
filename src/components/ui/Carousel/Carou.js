@@ -3,10 +3,18 @@
 
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Button, Box, Typography, Modal } from '@material-ui/core';
+import {
+  Paper,
+  Button,
+  Box,
+  Typography,
+  Modal,
+  Link,
+  Icon,
+} from '@material-ui/core';
 import Redes from '../Redes';
-// import QuiltedImageList from '../Carousel/QuiltedImageList';
 import Image from 'material-ui-image';
+
 const style = {
   // CHECK style para el modal
   position: 'absolute',
@@ -25,49 +33,68 @@ const style = {
 function Carou(props) {
   const items = [
     {
-      logo: '/assets/img/logoplan.png',
+      id: 1,
+      logo: 'assets/img/logoplan.png',
       nombre: 'PLAN!',
       descripcion: 'organizá tu día',
       categoria: 'compras',
       oferta: '50 % OFF ',
       ubicacion: 'Estomba 2411',
       mail: 'plansomos@gmail.com',
-      fb: 'plansomos',
-      ig: 'plansomos',
+      fb: 'organizatuplan',
+      ig: 'organizatuplan',
       tw: '',
       wapp: '26125615', // plan!
-      img: '5.jpg',
-      color: 'rgb(206, 126, 120)',
+      img: 'plan1.png',
+      // color: 'rgb(206, 126, 120)',
     },
     {
       id: 2,
-      nombre: 'CAFE MARTINEZ',
-      descripcion: 'Expertos en cafe',
+      logo: 'logo192.png',
+      nombre: 'ESTACIÓN VERDE',
+      descripcion: 'Café, flores y cosas ricas',
       categoria: 'gastronomia',
       oferta: '35 % OFF ',
-      ubicacion: 'Plaza 3265',
+      ubicacion: 'Plaza 3265 ',
       mail: 'plansomos@gmail.com',
       fb: 'plansomos',
       ig: 'plansomos',
       tw: '',
       wapp: '26125615', // plan!
-      img: '3.jpg',
-      color: 'rgb(100, 172, 200)',
+      img: 'verde1.png',
+      // color: 'rgb(100, 172, 200)',
     },
     {
       id: 3,
+      logo: 'logo192.png',
       nombre: 'PURO',
       descripcion: 'Almacen natural',
-      categoria: 'compras',
+      categoria: 'alimentos',
       oferta: '2 X 1  ',
       ubicacion: 'Superi 1988',
+      mail: 'plansomos@gmail.com',
+      fb: '',
+      ig: '',
+      tw: '',
+      wapp: '26125615', // plan!
+      img: 'puro2.png',
+      // color: 'rgb(125, 133, 177)',
+    },
+    {
+      id: 4,
+      logo: 'logo512.png',
+      nombre: 'AGRADO',
+      descripcion: 'Cafetería',
+      categoria: 'gastronomía',
+      oferta: '2 X 1  ',
+      ubicacion: 'Superí 3002',
       mail: 'plansomos@gmail.com',
       fb: 'plansomos',
       ig: 'plansomos',
       tw: '',
-      wapp: '26125615', // plan!
-      img: '4.jpg',
-      color: 'rgb(125, 133, 177)',
+      wapp: '3298-9416',
+      img: 'agrado1.jpg',
+      // color: 'rgb(125, 133, 177)',
     },
   ];
 
@@ -76,7 +103,7 @@ function Carou(props) {
       navButtonsProps={{
         // COLOR Change  and radius of the actual buttons. THIS STYLES BOTH BUTTONS
         style: {
-          backgroundColor: 'rgb(206, 126, 120)',
+          backgroundColor: '#005E87',
         },
       }}
       //
@@ -93,6 +120,9 @@ function Item(props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  // misma logica que en <redes/> para pasarle props.
+  const maps = 'https://www.google.com/maps/search/' + props.item.ubicacion;
 
   return (
     <Paper elevation={2}>
@@ -140,7 +170,7 @@ function Item(props) {
 
       {/* ////////////FIN MAIN /////////  */}
 
-      {/* <QuiltedImageList img={props.item.img} /> */}
+      {/* Prueba quilted <QuiltedImageList img={props.item.img} /> */}
 
       {/*  ////////// MODAL (MUI) //////  */}
       <Box>
@@ -166,16 +196,34 @@ function Item(props) {
               variant="body2"
               component="h4"
             >
-              <br />
-              <br />
-              <br />
-              <br />
               *Promoción solo válida en efectivo / débito <br />
-              {props.item.nombre} <br />
-              {props.item.ubicacion} <br />
             </Typography>
-            <Box sx={{ marginTop: '5rem' }}>
-              <Redes wapp={props.item.wapp} />
+            {/* CHECK /////////////////// logo Modal */}
+            <Box
+              sx={{
+                maxWidth: '160px',
+                textAlign: 'center',
+                marginRight: 'auto  ',
+                marginLeft: 'auto  ',
+                paddingTop: '10px',
+              }}
+            >
+              <Image src={props.item.logo} />
+            </Box>
+            <Box sx={{ marginTop: '1rem' }}>
+              {props.item.nombre} <br />
+              <Icon>location_on</Icon>
+              <br />
+              <Link href={maps} target="_blank" rel="noopener">
+                {props.item.ubicacion}
+              </Link>{' '}
+              <Redes
+                wapp={props.item.wapp}
+                mail={props.item.mail}
+                fb={props.item.fb}
+                ig={props.item.ig}
+                tw={props.item.tw}
+              />
             </Box>
           </Box>
         </Modal>
