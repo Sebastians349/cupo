@@ -79,6 +79,9 @@ const Categorias = () => {
         <Link as={ReachLink} to="/CatOtros" _hover={{ textDecoration: 'none' }}>
           <CategBox categ="otros rubros" foto="otros.jpg" />
         </Link>
+        <Link as={ReachLink} to="/CatProx" _hover={{ textDecoration: 'none' }}>
+          <CategBox categ="Proximamente" foto="2.jpg" />
+        </Link>
       </SimpleGrid>
       <Spacer />
     </Stack>

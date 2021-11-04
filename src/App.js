@@ -18,6 +18,7 @@ import CatIndum from './components/ui/pages/CatIndum';
 import CatGastro from './components/ui/pages/CatGastro';
 import CatActiv from './components/ui/pages/CatActiv';
 import CatOtros from './components/ui/pages/CatOtros';
+import CatProx from './components/ui/pages/CatProx';
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
         </Route>
         <Route path="/Sponsors">
           <Sponsors />
+        </Route>
+        <Route path="/CatProx">
+          <CatProx />
         </Route>
         {/* CHECK POR QUÉ NO RUTEA SI PONGO EL COMPO ARRIBA */}
         <Bienvenida />
