@@ -14,6 +14,7 @@ import {
 } from '@material-ui/core';
 import Redes from '../Redes';
 import Image from 'material-ui-image';
+import { LightMode } from '@chakra-ui/color-mode';
 
 const style = {
   // CHECK style para el modal
@@ -21,12 +22,13 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '50%',
+  width: '75%',
   minHeight: '50%',
   bgcolor: 'background.paper',
   borderRadius: 4,
   boxShadow: 48,
   textAlign: 'center',
+  color: '#003087',
   p: 4,
 };
 
@@ -210,20 +212,27 @@ function Item(props) {
             >
               <Image src={props.item.logo} />
             </Box>
-            <Box sx={{ marginTop: '1rem', fontWeight: 'bold' }}>
+            <Box
+              sx={{
+                marginTop: '1rem',
+                fontWeight: 'bold',
+              }}
+            >
               {props.item.nombre} <br />
               <Icon>location_on</Icon>
               <br />
               <Link href={maps} target="_blank" rel="noopener">
                 {props.item.ubicacion}
               </Link>{' '}
-              <Redes
-                wapp={props.item.wapp}
-                mail={props.item.mail}
-                fb={props.item.fb}
-                ig={props.item.ig}
-                tw={props.item.tw}
-              />
+              <LightMode>
+                <Redes
+                  wapp={props.item.wapp}
+                  mail={props.item.mail}
+                  fb={props.item.fb}
+                  ig={props.item.ig}
+                  tw={props.item.tw}
+                />
+              </LightMode>
             </Box>
           </Box>
         </Modal>

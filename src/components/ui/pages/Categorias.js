@@ -5,8 +5,7 @@ import CategBox from '../CategBox';
 import LogoHeader from '../LogoHeader';
 import { Link as ReachLink } from 'react-router-dom';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from '@chakra-ui/react';
-// import Carou2 from '../Carousel/Carou2';
-// import Carou3 from '../Carousel/Carou3';
+
 import Carou from '../Carousel/Carou';
 
 const Categorias = () => {
@@ -41,7 +40,7 @@ const Categorias = () => {
         justify="center"
         minW="10rem" // CHECK retoque xq el padding dinamico, pusheaba la seccion de abajo. TODO minChildWidth + botones slider
       >
-        <Container>
+        <Container maxWidth="container.md">
           <Carou />
         </Container>
       </Stack>
