@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <HStack>
       <Link href="/home">
-        <LogoHeader titulo="cupoghlan" />
+        <LogoHeader titulo="volvé al local" />
       </Link>
     </HStack>
   );

@@ -7,8 +7,8 @@ import {
 import { Box, Center, Container } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
 // import QuiltedImageList from '../personal/QuiltedImageList';
+// import RedesBig from '../RedesBig';
 import StandardImageList from '../personal/StandardList';
-import RedesBig from '../RedesBig';
 import RedesBigBtns from '../RedesBigBtns';
 
 const PersoA = () => {
