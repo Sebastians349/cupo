@@ -35,22 +35,6 @@ const style = {
 function Carou(props) {
   const items = [
     {
-      id: 1,
-      logo: 'assets/img/logoplan.png',
-      nombre: 'PLAN!',
-      descripcion: 'organizá tu día',
-      categoria: 'compras',
-      oferta: '50 % OFF ',
-      ubicacion: 'Romulo Naon',
-      mail: 'plansomos@gmail.com',
-      fb: 'organizatuplan',
-      ig: 'organizatuplan',
-      tw: '',
-      wapp: '26125615', // plan!
-      img: 'plan1.png',
-      // color: 'rgb(206, 126, 120)',
-    },
-    {
       id: 2,
       logo: 'logo192.png',
       nombre: 'ESTACIÓN VERDE',
@@ -98,6 +82,22 @@ function Carou(props) {
       img: 'agrado1.jpg',
       // color: 'rgb(125, 133, 177)',
     },
+    {
+      id: 1,
+      logo: 'assets/img/logo-1.png',
+      nombre: 'PLAN!',
+      descripcion: 'organizá tu día',
+      categoria: 'compras',
+      oferta: '50 % OFF ',
+      ubicacion: 'Romulo Naon',
+      mail: 'plansomos@gmail.com',
+      fb: 'organizatuplan',
+      ig: 'organizatuplan',
+      tw: '',
+      wapp: '26125615', // plan!
+      img: 'plan1.png',
+      // color: 'rgb(206, 126, 120)',
+    },
   ];
 
   return (
@@ -137,15 +137,22 @@ function Item(props) {
           letterSpacing: 3,
           padding: 10,
           borderRadius: 5,
+          fontFamily: 'Roboto',
         }}
       >
-        <Box sx={{ fontWeight: '500', fontSize: 28, padding: 5 }}>
+        <Box
+          sx={{
+            fontWeight: '500',
+            fontSize: 28,
+            padding: 5,
+          }}
+        >
           <h2>{props.item.nombre}</h2>
         </Box>
         <Box
           sx={{
             letterSpacing: 1,
-            fontWeight: 'medium',
+            fontWeight: '300',
             mb: '1rem',
             fontSize: 18,
           }}
@@ -191,7 +198,7 @@ function Item(props) {
               variant="h4"
               component="h3"
             >
-              ¡La oferta va acá! <br /> ¡y sigue acá!
+              ¡La oferta va acá! <br />
             </Typography>
             <Typography
               id="modal-modal-description"
