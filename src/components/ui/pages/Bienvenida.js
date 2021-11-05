@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Center } from '@chakra-ui/layout';
+import { Box, Text, VStack } from '@chakra-ui/layout';
 import { Image } from '@chakra-ui/image';
 import { Link } from '@chakra-ui/react';
 import { Link as ReachLink } from 'react-router-dom';
@@ -16,7 +16,7 @@ const Bienvenida = () => {
       opacity="0.7"
       minH="100vh"
     >
-      <Center>
+      <VStack>
         <Link as={ReachLink} to="/Categorias">
           <Image
             loading="lazy"
@@ -24,7 +24,10 @@ const Bienvenida = () => {
             _hover={{ opacity: 0.7 }}
           ></Image>
         </Link>
-      </Center>
+        <Text color="yellow.200" textShadow="xl" textTransform="uppercase">
+          Hacé click en el logo para ingresar
+        </Text>
+      </VStack>
     </Box>
   );
 };

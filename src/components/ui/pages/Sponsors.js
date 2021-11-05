@@ -8,10 +8,10 @@ const Sponsors = () => {
       <Center>
         <LogoHeader titulo="Sponsors" />
       </Center>
-      <SimpleGrid minChildWidth="200px" spacing="25px" p={1} mt={3}>
+      <SimpleGrid minChildWidth="200px" spacing="25px" p={3} mt={3}>
         <Link href="https://organizatuplan.com.ar" isExternal>
           <Box
-            bgImage="/assets/img/logoplan.png"
+            bgImage="/assets/img/logo-1.png"
             bgPosition="center"
             bgRepeat="no-repeat"
             bgSize="contain"
@@ -21,7 +21,7 @@ const Sponsors = () => {
           ></Box>
         </Link>
         <Box
-          bgImage="/assets/img/logoplan.png"
+          bgImage="logo192.png"
           bgPosition="center"
           bgRepeat="no-repeat"
           bgSize="contain"
@@ -30,7 +30,7 @@ const Sponsors = () => {
           height="100px"
         />
         <Box
-          bgImage="/assets/img/logoplan.png"
+          bgImage="logocupoazultrans.png"
           bgPosition="center"
           bgRepeat="no-repeat"
           bgSize="contain"

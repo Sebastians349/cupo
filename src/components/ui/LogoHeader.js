@@ -8,6 +8,7 @@ const LogoHeader = props => {
       <Image
         boxSize="50px"
         src="logocupoazultrans.png"
+        // src={props.logo} TODO PROPS PARA PAGINA PERSONAL
         objectFit="cover"
         fallbackSrc="https://via.placeholder.com/50"
       />

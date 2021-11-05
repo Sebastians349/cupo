@@ -19,6 +19,7 @@ import CatGastro from './components/ui/pages/CatGastro';
 import CatActiv from './components/ui/pages/CatActiv';
 import CatOtros from './components/ui/pages/CatOtros';
 import CatProx from './components/ui/pages/CatProx';
+import PersoA from './components/ui/pages/PersoA';
 
 function App() {
   return (
@@ -67,6 +68,9 @@ function App() {
         </Route>
         <Route path="/CatProx">
           <CatProx />
+        </Route>
+        <Route path="/PersoA">
+          <PersoA />
         </Route>
         {/* CHECK POR QUÉ NO RUTEA SI PONGO EL COMPO ARRIBA */}
         <Bienvenida />
