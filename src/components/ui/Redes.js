@@ -27,6 +27,7 @@ const Redes = props => {
             aria-label="Search database"
             variant="ghost"
             icon={<FaEnvelope />}
+            size="lg"
           ></IconButton>
         </Link>
       </Tooltip>
@@ -36,6 +37,7 @@ const Redes = props => {
             aria-label="Search database"
             variant="ghost"
             icon={<FaFacebook />}
+            size="lg"
           ></IconButton>
         </Link>
       </Tooltip>
@@ -45,6 +47,7 @@ const Redes = props => {
             aria-label="Search database"
             variant="ghost"
             icon={<FaInstagram />}
+            size="lg"
           ></IconButton>
         </Link>
       </Tooltip>
@@ -54,6 +57,7 @@ const Redes = props => {
             aria-label="Search database"
             variant="ghost"
             icon={<FaTwitter />}
+            size="lg"
           ></IconButton>
         </Link>
       </Tooltip>
@@ -63,6 +67,7 @@ const Redes = props => {
             aria-label="Search database"
             variant="ghost"
             icon={<FaWhatsapp />}
+            size="lg"
           ></IconButton>
         </Link>
       </Tooltip>

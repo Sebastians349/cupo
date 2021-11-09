@@ -1,6 +1,6 @@
 import React from 'react';
-import { Stack, Link, Button, HStack } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import { Stack, Link } from '@chakra-ui/react';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { GoLocation } from 'react-icons/go';
 import { BiEnvelope } from 'react-icons/bi';
 import { FiTwitter } from 'react-icons/fi';
@@ -8,7 +8,7 @@ import { AiOutlineFacebook } from 'react-icons/ai';
 import { IconButton, Tooltip } from '@chakra-ui/react';
 
 const RedesBig = props => {
-  //CHECK medio falopa pero desde el Link no podia pasarle bien los props.
+  //CHECK desde el Link no podia pasarle los props.
   const wapp =
     'https://wa.me/5411' +
     props.wapp +
@@ -20,10 +20,11 @@ const RedesBig = props => {
   const maps = 'https://www.google.com/maps/search/' + props.ubicacion;
 
   return (
-    <Stack direction={['row']} justifyContent="space-around">
+    <Stack direction={['row']} justifyContent="space-evenly" padding="5">
       <Tooltip fontWeight="light" label="ubicacion">
         <Link href={maps}>
           <IconButton
+            fontSize="larger"
             aria-label="Search database"
             variant="ghost"
             icon={<GoLocation />}
@@ -34,6 +35,7 @@ const RedesBig = props => {
         <Link href={mail}>
           <IconButton
             aria-label="Search database"
+            fontSize="larger"
             variant="ghost"
             icon={<BiEnvelope />}
           ></IconButton>
@@ -43,6 +45,7 @@ const RedesBig = props => {
         <Link href={fb} isExternal="true">
           <IconButton
             aria-label="Search database"
+            fontSize="larger"
             variant="ghost"
             icon={<AiOutlineFacebook />}
           ></IconButton>
@@ -52,6 +55,7 @@ const RedesBig = props => {
         <Link href={ig} isExternal>
           <IconButton
             aria-label="Search database"
+            fontSize="larger"
             variant="ghost"
             icon={<FaInstagram />}
           ></IconButton>
@@ -61,6 +65,7 @@ const RedesBig = props => {
         <Link href={tw} isExternal>
           <IconButton
             aria-label="Search database"
+            fontSize="larger"
             variant="ghost"
             icon={<FiTwitter />}
           ></IconButton>
@@ -70,6 +75,7 @@ const RedesBig = props => {
         <Link href={wapp} isExternal>
           <IconButton
             aria-label="Search database"
+            fontSize="larger"
             variant="ghost"
             icon={<FaWhatsapp />}
           ></IconButton>

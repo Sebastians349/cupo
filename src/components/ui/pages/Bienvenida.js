@@ -14,19 +14,31 @@ const Bienvenida = () => {
       bgRepeat="no-repeat"
       bgSize="cover"
       opacity="0.7"
-      minH="100vh"
+      minH="90vh"
     >
       <VStack>
-        <Link as={ReachLink} to="/Categorias">
+        <Link
+          as={ReachLink}
+          to="/Categorias"
+          _hover={{ textDecoration: 'none' }}
+        >
           <Image
             loading="lazy"
             src="logoclarito.png "
             _hover={{ opacity: 0.7 }}
           ></Image>
+          <Text
+            color="yellow.200"
+            textShadow="xl"
+            textTransform="uppercase"
+            fontWeight="bold"
+            letterSpacing="wide"
+            as="h2"
+            fontSize="2xl"
+          >
+            ingresar
+          </Text>
         </Link>
-        <Text color="yellow.200" textShadow="xl" textTransform="uppercase">
-          Hacé click en el logo para ingresar
-        </Text>
       </VStack>
     </Box>
   );
