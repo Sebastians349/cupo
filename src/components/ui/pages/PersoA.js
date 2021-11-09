@@ -6,9 +6,10 @@ import {
 } from '@chakra-ui/breadcrumb';
 import { Box, Center, Container } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
-// import QuiltedImageList from '../personal/QuiltedImageList';
 import RedesBig from '../RedesBig';
-import StandardImageList from '../personal/StandardList';
+import TitlebarImageList from '../personal/TitlebarImageList';
+// import StandardImageList from '../personal/StandardList';
+// import QuiltedImageList from '../personal/QuiltedImageList';
 
 const PersoA = () => {
   return (
@@ -29,7 +30,8 @@ const PersoA = () => {
       </Center>
       <Container maxWidth="container.md" centerContent p={2}>
         {/* <QuiltedImageList /> */}
-        <StandardImageList />
+        {/* <StandardImageList /> */}
+        <TitlebarImageList />
         <RedesBig />
       </Container>
     </Box>

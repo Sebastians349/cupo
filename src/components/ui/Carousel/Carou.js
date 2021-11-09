@@ -160,12 +160,7 @@ function Item(props) {
         >
           <p>{props.item.descripcion}</p>
         </Box>
-        <Button
-          variant="text"
-          size="small"
-          onClick={handleOpen}
-          _hover={{ color: 'red' }}
-        >
+        <Button variant="text" size="small" onClick={handleOpen}>
           <Box
             sx={{
               //cambia solo el texto <p></p> del boton
@@ -173,7 +168,6 @@ function Item(props) {
               fontSize: 18,
               border: '2px solid whitesmoke',
               padding: '0.35em',
-              _hover: { color: 'red' },
             }}
           >
             + INFO

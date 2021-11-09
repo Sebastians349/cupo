@@ -72,6 +72,7 @@ function App() {
         <Route path="/PersoA">
           <PersoA />
         </Route>
+
         {/* CHECK POR QUÉ NO RUTEA SI PONGO EL COMPO ARRIBA */}
         <Bienvenida />
       </Switch>
