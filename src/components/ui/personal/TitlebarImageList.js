@@ -13,9 +13,11 @@ import {
 export default function TitlebarImageList() {
   return (
     <ImageList sx={{ width: 500, height: 450 }}>
-      <ImageListItem key="Subheader" cols={2}>
-        {/* TODO REDUCIR MB (?) */}
-        <ListSubheader component="div">Ofertas Noviembre</ListSubheader>
+      {/* CHECK OJO CUANDO HACE OVERRIDE CON STYLE Y CUANDO CON SX */}
+      <ImageListItem key="Subheader" cols={2} style={{ height: 'auto' }}>
+        <ListSubheader component="div" fontSize="">
+          Ofertas Noviembre
+        </ListSubheader>
       </ImageListItem>
       {itemData.map(item => (
         <ImageListItem key={item.img}>
@@ -33,7 +35,7 @@ export default function TitlebarImageList() {
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
               >
-                <Info sx={{ color: 'yellow' }} />
+                <Info fontSize="large" style={{ color: '#003081' }} />
               </IconButton>
             }
           />
@@ -112,7 +114,7 @@ const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1549057188-efd70413345e',
     title: 'Catering',
-    precio: '$85',
+    precio: 'Consultar',
     cols: 2,
   },
 ];

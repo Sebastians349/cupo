@@ -15,7 +15,6 @@ import {
 import Redes from '../Redes';
 import Image from 'material-ui-image';
 import { LightMode } from '@chakra-ui/color-mode';
-import { BorderColor } from '@material-ui/icons';
 
 const style = {
   // CHECK style para el modal
