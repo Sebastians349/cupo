@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChakraProvider, Flex, theme } from '@chakra-ui/react';
-import { HStack, Spacer } from '@chakra-ui/layout';
+import { HStack } from '@chakra-ui/layout';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/ui/containers/Header';

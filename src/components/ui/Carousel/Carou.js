@@ -15,6 +15,7 @@ import {
 import Redes from '../Redes';
 import Image from 'material-ui-image';
 import { LightMode } from '@chakra-ui/color-mode';
+import { BorderColor } from '@material-ui/icons';
 
 const style = {
   // CHECK style para el modal
@@ -134,7 +135,7 @@ function Item(props) {
           backgroundColor: '#005E87', //FONDO CAROU COLOR
           textAlign: 'center',
           color: 'white',
-          letterSpacing: 3,
+          letterSpacing: 2,
           padding: 10,
           borderRadius: 5,
           fontFamily: 'Roboto',
@@ -159,12 +160,20 @@ function Item(props) {
         >
           <p>{props.item.descripcion}</p>
         </Box>
-        <Button variant="outlined" size="small" onClick={handleOpen}>
+        <Button
+          variant="text"
+          size="small"
+          onClick={handleOpen}
+          _hover={{ color: 'red' }}
+        >
           <Box
             sx={{
               //cambia solo el texto <p></p> del boton
               color: 'white',
               fontSize: 18,
+              border: '2px solid whitesmoke',
+              padding: '0.35em',
+              _hover: { color: 'red' },
             }}
           >
             + INFO

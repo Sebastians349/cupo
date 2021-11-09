@@ -7,9 +7,8 @@ import {
 import { Box, Center, Container } from '@chakra-ui/layout';
 import LogoHeader from '../LogoHeader';
 // import QuiltedImageList from '../personal/QuiltedImageList';
-// import RedesBig from '../RedesBig';
+import RedesBig from '../RedesBig';
 import StandardImageList from '../personal/StandardList';
-import RedesBigBtns from '../RedesBigBtns';
 
 const PersoA = () => {
   return (
@@ -31,8 +30,7 @@ const PersoA = () => {
       <Container maxWidth="container.md" centerContent p={2}>
         {/* <QuiltedImageList /> */}
         <StandardImageList />
-        {/* <RedesBig /> */}
-        <RedesBigBtns />
+        <RedesBig />
       </Container>
     </Box>
   );
