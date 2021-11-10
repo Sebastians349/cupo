@@ -8,9 +8,24 @@ import {
   ImageListItemBar,
   ListSubheader,
   IconButton,
+  Popover,
+  Typography,
 } from '@material-ui/core';
 
 export default function TitlebarImageList() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+
   return (
     <ImageList sx={{ width: 500, height: 450 }}>
       {/* CHECK OJO CUANDO HACE OVERRIDE CON STYLE Y CUANDO CON SX */}
@@ -35,7 +50,38 @@ export default function TitlebarImageList() {
                 sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                 aria-label={`info about ${item.title}`}
               >
-                <Info fontSize="large" style={{ color: '#003081' }} />
+                <Info
+                  fontSize="large"
+                  style={{ color: '#003081' }}
+                  onClick={handleClick}
+                />
+                <Popover
+                  id={id}
+                  open={open}
+                  anchorEl={anchorEl}
+                  onClose={handleClose}
+                  anchorOrigin={{
+                    vertical: 'center',
+                    horizontal: 'center',
+                  }}
+                  transformOrigin={{
+                    vertical: 'center',
+                    horizontal: 'center',
+                  }}
+                >
+                  <Typography
+                    style={{
+                      padding: 10,
+                      backgroundColor: '#fafafa',
+                    }}
+                  >
+                    Lo que quieras detallar <br />
+                    brevemente del producto.
+                    <br />
+                    Si tenes ingredientes <br />
+                    O lo que desees! <br />
+                  </Typography>
+                </Popover>
               </IconButton>
             }
           />

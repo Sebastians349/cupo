@@ -16,21 +16,25 @@ const SocialsList = () => {
         </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Facebook">
-        <IconButton
-          aria-label="Search database"
-          variant="ghost"
-          icon={<FaFacebook />}
-        ></IconButton>
+        <Link href="https://facebook.com/cupoghlan" isExternal>
+          <IconButton
+            aria-label="Search database"
+            variant="ghost"
+            icon={<FaFacebook />}
+          ></IconButton>
+        </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Instagram">
-        <IconButton
-          aria-label="Search database"
-          variant="ghost"
-          icon={<FaInstagram />}
-        ></IconButton>
+        <Link href="https://instagram.com/cupoghlan" isExternal>
+          <IconButton
+            aria-label="Search database"
+            variant="ghost"
+            icon={<FaInstagram />}
+          ></IconButton>
+        </Link>
       </Tooltip>
       <Tooltip fontWeight="light" label="Twitter">
-        <Link href="https://twitter.com/" isExternal>
+        <Link href="https://twitter.com/cupoghlan" isExternal>
           <IconButton
             aria-label="Search database"
             variant="ghost"
