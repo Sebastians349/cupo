@@ -16,8 +16,9 @@ import {
   List,
   ListItem,
   ListIcon,
+  Link,
 } from '@chakra-ui/react';
-import { MdCheckCircle } from 'react-icons/md';
+import { MdCheckCircle, MdInfoOutline } from 'react-icons/md';
 
 const Faq = () => {
   return (
@@ -282,10 +283,68 @@ const Faq = () => {
               <Container textAlign="justify">
                 Y siempre lo será. Formar parte de CUPOGHLAN solamente requiere
                 que como local brindes una oferta mensual y pegar en tu vidriera
-                el QR que te llevemos.
+                el QR que te brindemos.
                 <Spacer /> <br /> Nuestro equipo financia los gastos de la web y
                 desarrollo con las publicaciones destacadas, el aporte de
-                sponsors y los paquetes personalizados que ofrecemos.
+                sponsors / usuarios y los paquetes personalizados que ofrecemos.
+              </Container>
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box
+                  textTransform="uppercase"
+                  fontWeight="semibold"
+                  flex="1"
+                  textAlign="left"
+                >
+                  Paquetes Personalizados{' '}
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <Container textAlign="justify">
+                <List>
+                  <ListItem>
+                    <ListIcon as={MdInfoOutline} color="#003081" />
+                    Podés aparecer en el Carousel de <strong>
+                      DESTACADOS
+                    </strong>{' '}
+                    en nuestra página principal.
+                  </ListItem>
+                  <Spacer />
+                  <br />
+                  <ListItem>
+                    <ListIcon as={MdInfoOutline} color="#003081" />
+                    Tenés la opción de tener una landing con las ofertas de tu
+                    local. ¡Con QR propio!
+                  </ListItem>
+                  <Center>
+                    <Link href="http://cupoghlan.vercel.app/PersoA" isExternal>
+                      {/* CHECKFIX <Link href="https://cupoghlan.com.ar/PersoA"> */}
+                      <Image
+                        p={3}
+                        boxSize="150px"
+                        src="personalizada.png"
+                        alt="Ejemplo landing personalizada"
+                        objectFit="contain"
+                        fallbackSrc="https://via.placeholder.com/150"
+                      />
+                    </Link>
+                  </Center>
+                  <Text textAlign="center" fontWeight="light">
+                    Clikeá en la imagen para ver el modelo.
+                  </Text>
+                  <Spacer />
+                  <br />
+                  <ListItem>
+                    <ListIcon as={MdInfoOutline} color="#003081" />
+                    Para cualquier desarrollo o consulta sobre los precios de
+                    los paquetes personalizados. Envianos un mail.
+                  </ListItem>
+                </List>
               </Container>
             </AccordionPanel>
           </AccordionItem>
@@ -376,7 +435,7 @@ const Faq = () => {
             </h2>
             <AccordionPanel pb={4}>
               <Container textAlign="justify">
-                De toparse con algún error de cualquier indole, por favor
+                De toparse con algún error de cualquier índole, por favor
                 comunicarse al mail de contacto. <Spacer /> <br />
                 Agregar ERROR / ACTUALIZACIÓN al subject del mail y a
                 continuación detallar el mismo para su eventual
