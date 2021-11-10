@@ -13,7 +13,7 @@ const Seba = () => {
         }}
       >
         {' '}
-        Sebastián Simarro{' '}
+        SS{' '}
       </Link>
     </Text>
   );
