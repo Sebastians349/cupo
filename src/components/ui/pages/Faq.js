@@ -180,7 +180,7 @@ const Faq = () => {
                     <ListIcon as={MdCheckCircle} color="green.500" />
                     <strong>Categoría/Rubro.</strong> <br />
                     Ejemplo Categoría: Alimentos - Actividades - Indumentaria -
-                    Hogar-Gastronomia - Otros rubros. <br /> Este último si no
+                    Hogar-Gastronomía - Otros rubros. <br /> Este último si no
                     entrás en las otras. <br /> Próximamente, más categorías.{' '}
                     <br />
                     Ejemplo Rubro: Pastelería, Ferretería, etc.{' '}
@@ -200,18 +200,17 @@ const Faq = () => {
                   <ListItem>
                     <ListIcon as={MdCheckCircle} color="green.500" />
                     <strong>Redes sociales.</strong> <br /> Las que tengas. Web,
-                    Facebook, Instagram, Twitter y Whatsapp. <Spacer />
-                    <br />
-                    Este último, fundamental, ya que linkea directo con la App
-                    para mensajearte. (no hace falta que nos brindes el +54 9 11
-                    . Sólo los últimos 8 numeros )
+                    Facebook, Instagram, Twitter y WhatsApp. Este último,
+                    fundamental, ya que linkea directo con la App para
+                    mensajearte.
                   </ListItem>
                   <ListItem>
                     <ListIcon as={MdCheckCircle} color="green.500" />
                     <strong>La oferta y detalle de la misma. </strong>
                     <br />
-                    Si tiene valor($), con fecha de caducidad o stock. Si es en
-                    efectivo, débito u otro método de pago.
+                    Algunos ejemplos: descuentos, 2x1, precio especial hasta
+                    agotar stock o por pago en efectivo, débito u otro método de
+                    pago, etc.
                   </ListItem>
                   <ListItem>
                     <ListIcon as={MdCheckCircle} color="green.500" />
@@ -220,25 +219,24 @@ const Faq = () => {
                     <UnorderedList>
                       <ListItem>Nombre.</ListItem>{' '}
                       <ListItem>
-                        Whatsapp (no te agendamos, ni te agregamos a ningún
-                        grupo, ni te enviamos mensajes)
+                        WhatsApp personal (no te agendamos, ni te agregamos a
+                        ningún grupo, ni te enviamos mensajes)
                       </ListItem>
-                      <ListItem>Telefono comercial.</ListItem>{' '}
-                      <ListItem>Cuit del local.</ListItem> <br />
+                      <ListItem>Teléfono comercial.</ListItem>{' '}
+                      <ListItem>CUIT del local.</ListItem> <br />
                     </UnorderedList>
-                    Estos datos son para seguridad y validación de identidad del
-                    comercio en la carga de datos.{' '}
+                    Esta información no es obligatoria, pero es para seguridad y
+                    validación de identidad del comercio en la carga de datos.{' '}
                     <Text as="mark">
-                      El usuario NO va a verlos. Ni se suben a la base de datos
-                      / repositorio.
+                      El usuario NO va a verla, ni se sube a una base de datos /
+                      repositorio.
                     </Text>{' '}
                     <Spacer />
                     <br />
-                    Lo ideal es que la primera vez nos mandes el mail ,nos
-                    avises por dm en Instagram para validar al comercio.
-                    <Spacer /> <br /> Si en el momento de la carga /
-                    actualización de datos , no podemos validar la identidad, no
-                    actualizamos lo solicitado en nuestra web.
+                    Lo ideal es que nos envies por mail toda información o
+                    pedidos de actualización, ya que de otra forma no podremos
+                    validar tu identidad. De esta forma, además, el márgen de
+                    error es menor.
                   </ListItem>
                 </List>
               </Container>
@@ -286,7 +284,8 @@ const Faq = () => {
                 el QR que te brindemos.
                 <Spacer /> <br /> Nuestro equipo financia los gastos de la web y
                 desarrollo con las publicaciones destacadas, el aporte de
-                sponsors / usuarios y los paquetes personalizados que ofrecemos.
+                sponsors y/o usuarias/os y los paquetes personalizados que
+                ofrecemos.
               </Container>
             </AccordionPanel>
           </AccordionItem>
@@ -312,7 +311,8 @@ const Faq = () => {
                     Podés aparecer en el Carousel de <strong>
                       DESTACADOS
                     </strong>{' '}
-                    en nuestra página principal.
+                    en nuestra página principal, donde te lleva el QR que
+                    cualquier persona escaneé en los locales.
                   </ListItem>
                   <Spacer />
                   <br />
@@ -323,6 +323,7 @@ const Faq = () => {
                   </ListItem>
                   <Center>
                     <Link href="http://cupoghlan.vercel.app/PersoA" isExternal>
+                      {/* <Link href="/PersoA"> */}
                       {/* CHECKFIX <Link href="https://cupoghlan.com.ar/PersoA"> */}
                       <Image
                         p={3}
@@ -342,7 +343,8 @@ const Faq = () => {
                   <ListItem>
                     <ListIcon as={MdInfoOutline} color="#003081" />
                     Para cualquier desarrollo o consulta sobre los precios de
-                    los paquetes personalizados. Envianos un mail.
+                    los paquetes personalizados envianos un mail a
+                    cupoghlan@gmail.com
                   </ListItem>
                 </List>
               </Container>
@@ -437,9 +439,9 @@ const Faq = () => {
               <Container textAlign="justify">
                 De toparse con algún error de cualquier índole, por favor
                 comunicarse al mail de contacto. <Spacer /> <br />
-                Agregar ERROR / ACTUALIZACIÓN al subject del mail y a
-                continuación detallar el mismo para su eventual
-                corrección/actualización, junto con tus datos de contacto.
+                Agregar ERROR/ACTUALIZACIÓN al subject del mail y a continuación
+                detallar el mismo para su eventual corrección/actualización,
+                junto con tus datos de contacto.
               </Container>
             </AccordionPanel>
           </AccordionItem>

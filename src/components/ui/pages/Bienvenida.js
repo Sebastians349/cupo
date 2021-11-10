@@ -35,6 +35,7 @@ const Bienvenida = () => {
             letterSpacing="wide"
             as="h2"
             fontSize="2xl"
+            marginBottom="revert"
           >
             ingresar
           </Text>
