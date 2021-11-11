@@ -4,7 +4,6 @@ import SocialsList from '../SocialsList';
 import Seba from '../Seba';
 // import LogoHeader from '../LogoHeader';
 import Cafecito from '../../Cafecito';
-import LogoFooter from '../LogoFooter';
 
 const Footer = () => {
   return (
@@ -18,7 +17,6 @@ const Footer = () => {
     >
       <SocialsList />
       <Spacer />
-      <LogoFooter />
       <Cafecito />
       <Spacer />
       <Seba />

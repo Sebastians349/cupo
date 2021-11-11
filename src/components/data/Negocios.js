@@ -19,7 +19,7 @@ export const negocios = [
     nombre: 'Diego',
     descripcion: 'heladeria',
     categoria: 'alimentos',
-    oferta: 'Martes 2 x1 kg  ',
+    oferta: 'Martes 2 x 1 kg  ',
     ubicacion: 'Romulo Naon 2402',
     mail: 'diegote@gmail.com',
     fb: 'markete',
