@@ -234,7 +234,7 @@ function Item(props) {
               <LightMode>
                 <Box
                   sx={{
-                    marginTop: '5rem',
+                    marginTop: '4rem',
                   }}
                 >
                   <Redes

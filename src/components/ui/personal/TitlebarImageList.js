@@ -52,9 +52,10 @@ export default function TitlebarImageList() {
               >
                 <Info
                   fontSize="large"
-                  style={{ color: '#003081' }}
+                  style={{ color: '#00807B' }}
                   onClick={handleClick}
                 />
+                {/* ///////// Popover ////////// */}
                 <Popover
                   id={id}
                   open={open}

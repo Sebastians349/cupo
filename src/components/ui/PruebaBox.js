@@ -63,7 +63,7 @@ const PruebaBox = props => {
               onClose={onClose}
               closeOnOverlayClick={false}
               isCentered
-              size="xl"
+              size="md"
             >
               <ModalOverlay />
               <ModalContent>

@@ -26,7 +26,7 @@ const CatOtros = () => {
     },
     {
       id: 2,
-      logo: '/assets/img/2.png',
+      logo: '/assets/img/5.png',
       nombre: 'Diego',
       descripcion: 'heladeria',
       categoria: 'alimentos',
@@ -45,7 +45,7 @@ const CatOtros = () => {
       descripcion: 'alimentos',
       categoria: 'panaderia',
       oferta: '20 % off',
-      ubicacion: '20 % off',
+      ubicacion: 'Plaza 1844',
       mail: '20 % off',
       fb: '20 % off',
       ig: '20 % off',
@@ -59,14 +59,29 @@ const CatOtros = () => {
       descripcion: 'peluqueria',
       categoria: 'otros',
       oferta: '20 % off',
-      ubicacion: '20 % off',
+      ubicacion: 'Estomba 2417',
       mail: 'lalal',
       fb: '20 % off',
       ig: '20 % off',
       tw: '20 % off',
       wapp: '50500147', // es el del GCBA
     },
+    {
+      id: '',
+      logo: '/logocupoazultrans.png',
+      nombre: 'PROXIMAMENTE',
+      descripcion: '',
+      categoria: '',
+      oferta: '',
+      ubicacion: '',
+      mail: '',
+      fb: '',
+      ig: '',
+      tw: '',
+      wapp: '', // es el del GCBA
+    },
   ];
+
   return (
     <Box p={3}>
       <Breadcrumb>
@@ -84,39 +99,22 @@ const CatOtros = () => {
         <LogoHeader titulo="Otros rubros" />
       </Center>
       <SimpleGrid minChildWidth="150px" spacing="10px" mt={3} p={1}>
-        <PruebaBox
-          key={data[0].id}
-          logo={data[0].logo}
-          nombre={data[0].nombre}
-          descripcion={data[0].descripcion}
-          oferta={data[0].oferta}
-          ubicacion={data[0].ubicacion}
-          mail={data[0].mail}
-          tw={data[0].tw}
-          fb={data[0].fb}
-          ig={data[0].ig}
-          wapp={data[0].wapp}
-        />
-        <PruebaBox
-          key={data[1].id}
-          logo={data[1].logo}
-          nombre={data[1].nombre}
-          descripcion={data[1].descripcion}
-          oferta={data[1].oferta}
-          ubicacion={data[1].ubicacion}
-          mail={data[1].mail}
-          tw={data[1].tw}
-          fb={data[1].fb}
-          ig={data[1].ig}
-          wapp={data[1].wapp}
-        />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        {data.map(item => (
+          <PruebaBox
+            key={item.id}
+            logo={item.logo}
+            nombre={item.nombre}
+            descripcion={item.descripcion}
+            oferta={item.oferta}
+            ubicacion={item.ubicacion}
+            mail={item.mail}
+            tw={item.tw}
+            fb={item.fb}
+            ig={item.ig}
+            wapp={item.wapp}
+          />
+        ))}
+
         <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
         <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
         <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
