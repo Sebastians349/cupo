@@ -106,10 +106,14 @@ const PruebaBox = props => {
                     <Stack>
                       <Text mt="1" textAlign="center" fontSize="xs">
                         {props.descripcion} <Spacer />
-                        <Link href={maps} textDecor="none" isExternal>
+                        <Link
+                          _hover={{ textDecor: 'none' }}
+                          href={maps}
+                          isExternal
+                        >
                           <Icon ml={1} mb={1} w={6} h={6} as={MdLocationOn} />{' '}
+                          {props.ubicacion}
                         </Link>
-                        {props.ubicacion}
                       </Text>
                       <Redes
                         w={6}

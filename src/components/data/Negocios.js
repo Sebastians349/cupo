@@ -1,4 +1,4 @@
-export const negocios = props => [
+export const negocios = [
   {
     id: 1,
     logo: '/assets/img/4.png',
