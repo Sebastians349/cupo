@@ -15,8 +15,9 @@ const Cafecito = () => {
       <Stack direction={['column', 'row']}>
         <Center>
           <Text fontSize="xs" fontWeight="medium" textAlign="center">
-            ¿Te sirve Cupoghlan? Es gratis. Si querés, regalanos un
-          </Text>
+            ¿Te sirve Cupoghlan? Es gratis. Si querés, nos podés ayudar con un
+            mini
+          </Text>{' '}
           <Link href="https://cafecito.app/cupoghlan" isExternal>
             <Spacer />{' '}
             <Image

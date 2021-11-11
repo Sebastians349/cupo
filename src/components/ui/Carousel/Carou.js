@@ -22,14 +22,14 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: '75%',
+  width: '80%',
   minHeight: '50%',
   bgcolor: 'background.paper',
   borderRadius: 4,
   boxShadow: 48,
   textAlign: 'center',
   color: '#003087',
-  p: 4,
+  p: 2,
 };
 
 function Carou(props) {
@@ -181,8 +181,6 @@ function Item(props) {
 
       {/* ////////////FIN MAIN /////////  */}
 
-      {/* Prueba quilted <QuiltedImageList img={props.item.img} /> */}
-
       {/*  ////////// MODAL (MUI) //////  */}
       <Box>
         <Modal
@@ -212,7 +210,7 @@ function Item(props) {
             {/* CHECK /////////////////// logo Modal */}
             <Box
               sx={{
-                maxWidth: '160px',
+                maxWidth: '50px',
                 textAlign: 'center',
                 marginRight: 'auto  ',
                 marginLeft: 'auto  ',
@@ -234,13 +232,19 @@ function Item(props) {
                 {props.item.ubicacion}
               </Link>{' '}
               <LightMode>
-                <Redes
-                  wapp={props.item.wapp}
-                  mail={props.item.mail}
-                  fb={props.item.fb}
-                  ig={props.item.ig}
-                  tw={props.item.tw}
-                />
+                <Box
+                  sx={{
+                    marginTop: '5rem',
+                  }}
+                >
+                  <Redes
+                    wapp={props.item.wapp}
+                    mail={props.item.mail}
+                    fb={props.item.fb}
+                    ig={props.item.ig}
+                    tw={props.item.tw}
+                  />
+                </Box>
               </LightMode>
             </Box>
           </Box>

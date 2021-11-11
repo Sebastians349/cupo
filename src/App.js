@@ -24,7 +24,7 @@ import PersoA from './components/ui/pages/PersoA';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Flex justify="space-between" boxShadow="xs" p={1}>
+      <Flex justify="space-between" boxShadow="md" p={1}>
         {/* TODO  REHACER EL HEADER */}
         <Header />
         <HStack>
