@@ -10,7 +10,7 @@ import Carou from '../Carousel/Carou';
 
 const Categorias = () => {
   return (
-    <Stack minH="80vh" p={5}>
+    <Stack p={5}>
       <Breadcrumb>
         <BreadcrumbItem>
           <BreadcrumbLink href="/Home">Home</BreadcrumbLink>
@@ -51,7 +51,7 @@ const Categorias = () => {
       <Center pb="10" pt="16">
         <LogoHeader titulo="categorías" as="h1" />
       </Center>
-      <SimpleGrid minChildWidth="275px" spacing="40px">
+      <SimpleGrid minChildWidth="250px" spacing="40px">
         <Link
           as={ReachLink}
           to="/CatAlimentos"

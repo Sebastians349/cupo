@@ -110,32 +110,32 @@ const CatHogar = () => {
           ig={data[1].ig}
           wapp={data[1].wapp}
         />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
-        <PruebaBox nombre="PROXIMAMENTE" logo="/logoposta.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
+        <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
       </SimpleGrid>
     </Box>
   );

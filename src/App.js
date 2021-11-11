@@ -20,11 +20,12 @@ import CatActiv from './components/ui/pages/CatActiv';
 import CatOtros from './components/ui/pages/CatOtros';
 import CatProx from './components/ui/pages/CatProx';
 import PersoA from './components/ui/pages/PersoA';
+import CatTest from './components/ui/pages/CatTest';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Flex justify="space-between" boxShadow="xs" p={1}>
+      <Flex justify="space-between" boxShadow="md" p={1}>
         {/* TODO  REHACER EL HEADER */}
         <Header />
         <HStack>
@@ -68,6 +69,9 @@ function App() {
         </Route>
         <Route path="/CatProx">
           <CatProx />
+        </Route>
+        <Route path="/CatTest">
+          <CatTest />
         </Route>
         <Route path="/PersoA">
           <PersoA />
