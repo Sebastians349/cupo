@@ -20,7 +20,6 @@ import CatActiv from './components/ui/pages/CatActiv';
 import CatOtros from './components/ui/pages/CatOtros';
 import CatProx from './components/ui/pages/CatProx';
 import PersoA from './components/ui/pages/PersoA';
-import CatTest from './components/ui/pages/CatTest';
 
 function App() {
   return (
@@ -69,9 +68,6 @@ function App() {
         </Route>
         <Route path="/CatProx">
           <CatProx />
-        </Route>
-        <Route path="/CatTest">
-          <CatTest />
         </Route>
         <Route path="/PersoA">
           <PersoA />
