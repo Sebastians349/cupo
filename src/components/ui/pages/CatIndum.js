@@ -37,6 +37,7 @@ const CatIndum = () => {
             oferta={data[i].oferta}
             ubicacion={data[i].ubicacion}
             mail={data[i].mail}
+            detalle={data[i].detalle}
             tw={data[i].tw}
             fb={data[i].fb}
             ig={data[i].ig}

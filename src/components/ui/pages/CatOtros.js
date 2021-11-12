@@ -37,6 +37,7 @@ const CatOtros = () => {
             descripcion={data[i].descripcion}
             oferta={data[i].oferta}
             ubicacion={data[i].ubicacion}
+            detalle={data[i].detalle}
             mail={data[i].mail}
             tw={data[i].tw}
             fb={data[i].fb}

@@ -37,6 +37,7 @@ const CatAlimentos = () => {
             nombre={data[i].nombre}
             descripcion={data[i].descripcion}
             oferta={data[i].oferta}
+            detalle={data[i].detalle}
             ubicacion={data[i].ubicacion}
             mail={data[i].mail}
             tw={data[i].tw}
