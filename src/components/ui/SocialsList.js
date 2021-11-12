@@ -9,8 +9,9 @@ const SocialsList = () => {
       <Tooltip fontWeight="light" label="Enviar un mail">
         <Link href="mailto:cupoghlan@gmail.com">
           <IconButton
-            aria-label="Search database"
+            aria-label="enviar un mail"
             variant="ghost"
+            size="xs"
             icon={<FaEnvelope />}
           ></IconButton>
         </Link>
@@ -18,8 +19,9 @@ const SocialsList = () => {
       <Tooltip fontWeight="light" label="Facebook">
         <Link href="https://facebook.com/cupoghlan" isExternal>
           <IconButton
-            aria-label="Search database"
+            aria-label="nuestro facebook"
             variant="ghost"
+            size="xs"
             icon={<FaFacebook />}
           ></IconButton>
         </Link>
@@ -27,8 +29,9 @@ const SocialsList = () => {
       <Tooltip fontWeight="light" label="Instagram">
         <Link href="https://instagram.com/cupoghlan" isExternal>
           <IconButton
-            aria-label="Search database"
+            aria-label="nuestro instagram"
             variant="ghost"
+            size="xs"
             icon={<FaInstagram />}
           ></IconButton>
         </Link>
@@ -36,8 +39,9 @@ const SocialsList = () => {
       <Tooltip fontWeight="light" label="Twitter">
         <Link href="https://twitter.com/cupoghlan" isExternal>
           <IconButton
-            aria-label="Search database"
+            aria-label="envianos un tuit"
             variant="ghost"
+            size="xs"
             icon={<FaTwitter />}
           ></IconButton>
         </Link>

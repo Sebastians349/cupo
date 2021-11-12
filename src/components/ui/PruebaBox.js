@@ -94,7 +94,7 @@ const PruebaBox = props => {
                     nombrando a CUPOGHLAN
                   </Text>
                   <Text mt="1" textAlign="center" fontSize="x-small">
-                    *Promoción válida solo en efectivo{' '}
+                    {props.detalle}
                   </Text>
                 </ModalBody>
                 <Center>

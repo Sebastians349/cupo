@@ -286,6 +286,30 @@ const Faq = () => {
                 desarrollo con las publicaciones destacadas, el aporte de
                 sponsors y/o usuarias/os y los paquetes personalizados que
                 ofrecemos.
+                <Spacer /> <br /> Si CUPOGHLAN te sirvió o sentís que ayudó a
+                los comerciantes y/o consumidores. Considerá invitarnos un
+                "cafecito".
+                <Spacer /> <br />
+                Es un valor simbólico. Podés regalarnos la cantidad que quieras,
+                si te sentís generosa/o 😉
+                <Spacer /> <br />
+                Todo lo donado irá para la mejora de la web y la futura mudanza
+                de servidor. <br /> (Y al nivel de cafeína en sangre de nuestro
+                desarrollador, para que no se duerma por las noches.)
+                <Spacer /> <br />
+                <Text textAlign="center">Acá 👇 te dejo el Link</Text>
+                <Center>
+                  <Link href="https://cafecito.app/cupoghlan" isExternal>
+                    <Image
+                      boxSize="150px"
+                      objectFit="contain"
+                      src="cafecito.png"
+                      borderRadius="5px"
+                      alt="logo de cafecito"
+                      fallbackSrc="https://via.placeholder.com/50"
+                    />
+                  </Link>
+                </Center>
               </Container>
             </AccordionPanel>
           </AccordionItem>

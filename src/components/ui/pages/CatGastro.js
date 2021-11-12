@@ -7,66 +7,10 @@ import {
 } from '@chakra-ui/breadcrumb';
 import LogoHeader from '../LogoHeader';
 import PruebaBox from '../PruebaBox';
+import { DataGastro } from '../../data/DataGastro';
 
 const CatGAstro = () => {
-  const data = [
-    {
-      id: 1,
-      logo: '/assets/img/4.png',
-      nombre: 'Del amigo',
-      descripcion: 'verduleria',
-      categoria: 'alimentos',
-      oferta: '25 % OFF ',
-      ubicacion: 'Romulo Naon 2199',
-      mail: 'lallaa@gmail.com',
-      fb: 'markete',
-      ig: 'localete',
-      tw: 'potus',
-      wapp: '26125615', // plan!
-    },
-    {
-      id: 2,
-      logo: '/assets/img/2.png',
-      nombre: 'Diego',
-      descripcion: 'heladeria',
-      categoria: 'alimentos',
-      oferta: 'Martes 2 x1 kg  ',
-      ubicacion: 'Romulo Naon 2402',
-      mail: 'diegote@gmail.com',
-      fb: 'markete',
-      ig: 'localete',
-      tw: 'potus',
-      wapp: '26125615', // plan!
-    },
-    {
-      id: 3,
-      logo: '/assets/img/2.png',
-      nombre: 'local 2',
-      descripcion: 'alimentos',
-      categoria: 'panaderia',
-      oferta: '20 % off',
-      ubicacion: '20 % off',
-      mail: '20 % off',
-      fb: '20 % off',
-      ig: '20 % off',
-      tw: '20 % off',
-      wapp: '26125615', // plan!
-    },
-    {
-      id: 4,
-      logo: '/assets/img/3.png',
-      nombre: 'local 3',
-      descripcion: 'peluqueria',
-      categoria: 'otros',
-      oferta: '20 % off',
-      ubicacion: '20 % off',
-      mail: 'lalal',
-      fb: '20 % off',
-      ig: '20 % off',
-      tw: '20 % off',
-      wapp: '50500147', // es el del GCBA
-    },
-  ];
+  const data = DataGastro;
   return (
     <Box p={3}>
       <Breadcrumb>
@@ -85,32 +29,22 @@ const CatGAstro = () => {
       </Center>
       <Container maxW="container.xl">
         <SimpleGrid minChildWidth="175px" spacing="10px" mt={3} p={1}>
-          <PruebaBox
-            key={data[0].id}
-            logo={data[0].logo}
-            nombre={data[0].nombre}
-            descripcion={data[0].descripcion}
-            oferta={data[0].oferta}
-            ubicacion={data[0].ubicacion}
-            mail={data[0].mail}
-            tw={data[0].tw}
-            fb={data[0].fb}
-            ig={data[0].ig}
-            wapp={data[0].wapp}
-          />
-          <PruebaBox
-            key={data[1].id}
-            logo={data[1].logo}
-            nombre={data[1].nombre}
-            descripcion={data[1].descripcion}
-            oferta={data[1].oferta}
-            ubicacion={data[1].ubicacion}
-            mail={data[1].mail}
-            tw={data[1].tw}
-            fb={data[1].fb}
-            ig={data[1].ig}
-            wapp={data[1].wapp}
-          />
+          {data.map((item, i) => (
+            <PruebaBox
+              key={data[i].id}
+              logo={data[i].logo}
+              nombre={data[i].nombre}
+              descripcion={data[i].descripcion}
+              oferta={data[i].oferta}
+              detalle={data[i].detalle}
+              ubicacion={data[i].ubicacion}
+              mail={data[i].mail}
+              tw={data[i].tw}
+              fb={data[i].fb}
+              ig={data[i].ig}
+              wapp={data[i].wapp}
+            />
+          ))}
           <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
           <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
           <PruebaBox nombre="PROXIMAMENTE" logo="/logocupoazultrans.png" />
