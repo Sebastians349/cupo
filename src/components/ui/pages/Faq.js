@@ -105,7 +105,7 @@ const Faq = () => {
                 Ingresamos los datos que nos brindes (junto con tu oferta) y te
                 asignamos GRATIS un espacio en la web, según tu rubro.
                 <Spacer /> <br />
-                Te dejamos un QR para que exhibas en la vidriera de tu local.
+                Te brindamos un QR para que exhibas en la vidriera de tu local.
                 Cualquier persona, al escanearlo, tiene acceso directo a la web
                 de CUPOGHLAN. <Spacer /> <br /> Allí, van a encontrar los datos
                 de tu comercio y la oferta que hayas elegido, para poder
@@ -188,7 +188,7 @@ const Faq = () => {
                   <ListItem>
                     <ListIcon as={MdCheckCircle} color="green.500" />
                     <strong>Descripción/Bajada nombre.</strong> <br />
-                    Ej: "Cosas muy ricas", en la descripcion junto con el rubro.
+                    Ej: "Cosas muy ricas", en la descripción junto con el rubro.
                   </ListItem>
                   <ListItem>
                     <ListIcon as={MdCheckCircle} color="green.500" />
