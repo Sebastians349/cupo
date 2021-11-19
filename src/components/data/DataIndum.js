@@ -62,7 +62,7 @@ export const DataIndum = [
   {
     id: '',
     logo: '/logocupoazultrans.png',
-    nombre: 'PROXIMAMENTE',
+    nombre: 'Proximamente',
     descripcion: 'Indumentaria',
     categoria: '',
     oferta: '',

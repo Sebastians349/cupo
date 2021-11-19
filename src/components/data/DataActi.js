@@ -62,7 +62,7 @@ export const DataActi = [
   {
     id: '',
     logo: '/logocupoazultrans.png',
-    nombre: 'PROXIMAMENTE',
+    nombre: 'Proximamente',
     descripcion: '',
     categoria: '',
     oferta: '',

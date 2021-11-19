@@ -62,7 +62,7 @@ export const DataHogar = [
   {
     id: '',
     logo: '/logocupoazultrans.png',
-    nombre: 'PROXIMAMENTE',
+    nombre: 'Proximamente',
     descripcion: 'Hogar',
     categoria: '',
     oferta: '',

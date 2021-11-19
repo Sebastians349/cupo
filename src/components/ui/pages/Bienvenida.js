@@ -20,13 +20,18 @@ const Bienvenida = () => {
         <Link
           as={ReachLink}
           to="/Categorias"
-          _hover={{ textDecoration: 'none' }}
+          _hover={{ textDecoration: 'none', opacity: 0.7 }}
         >
           <Image
+            mt="32"
+            boxShadow="base"
             loading="lazy"
-            src="logoclarito.png "
+            boxSize="xl"
+            objectFit="cover"
+            src="logo_amarilloXL.png "
             _hover={{ opacity: 0.7 }}
-          ></Image>
+            alt="logo de Cupoghlan"
+          />
           <Text
             color="yellow.200"
             textShadow="xl"
@@ -36,6 +41,7 @@ const Bienvenida = () => {
             as="h2"
             fontSize="2xl"
             marginBottom="revert"
+            mt="2.5"
           >
             ingresar
           </Text>
