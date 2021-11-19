@@ -12,7 +12,7 @@ export const DataOtros = [
     fb: 'markete',
     ig: 'localete',
     tw: 'potus',
-    wapp: '26125615', // plan!
+    wapp: '26125615', // plan! FIXTODO SOLO LOS ULTIMOS 8 NUMEROS.
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ export const DataOtros = [
   {
     id: '',
     logo: '/logocupoazultrans.png',
-    nombre: 'PROXIMAMENTE',
+    nombre: 'Proximamente',
     descripcion: '',
     categoria: '',
     oferta: '',

@@ -62,7 +62,7 @@ export const DataGastro = [
   {
     id: '',
     logo: '/logocupoazultrans.png',
-    nombre: 'PROXIMAMENTE',
+    nombre: 'Proximamente',
     descripcion: '',
     categoria: '',
     oferta: '',

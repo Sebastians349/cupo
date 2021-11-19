@@ -60,7 +60,7 @@ export const DataAlim = [
   {
     id: '',
     logo: '/logocupoazultrans.png',
-    nombre: 'PROXIMAMENTE',
+    nombre: 'Proximamente',
     descripcion: '',
     categoria: '',
     oferta: '',
