@@ -13,15 +13,16 @@ import LogoHeader from '../LogoHeader';
 
 const Sponsors = () => {
   return (
-    <Stack h="100vh">
+    <Stack>
       <Center mt={5} mb={5}>
         <LogoHeader titulo="Confian en nosotr@s" />
       </Center>
+
       <SimpleGrid minChildWidth="200px" spacing="25px" p={5}>
         <VStack>
           <Image
-            src="/assets/img/A1.jpg"
-            boxSize="100px"
+            src="http://www.a1design.com.ar/press/wp-content/uploads/2018/08/logo_2018-02.jpg"
+            boxSize="150px"
             objectFit="contain"
             opacity="0.5"
             alt="logo de a1 "
@@ -45,7 +46,7 @@ const Sponsors = () => {
         <VStack>
           <Image
             src="/assets/img/barriosarb.png"
-            boxSize="100px"
+            boxSize="150px"
             objectFit="contain"
             opacity="0.5"
             alt="logo de barrios Arborescentes "
@@ -69,7 +70,7 @@ const Sponsors = () => {
         <VStack>
           <Image
             src="/assets/img/logo-1.png"
-            boxSize="100px"
+            boxSize="150px"
             objectFit="contain"
             opacity="0.5"
             alt="logo de plan "
@@ -93,7 +94,7 @@ const Sponsors = () => {
         <VStack>
           <Image
             src="logo192.png"
-            boxSize="100px"
+            boxSize="150px"
             objectFit="contain"
             opacity="0.5"
             alt="logo de React JS"
@@ -115,6 +116,8 @@ const Sponsors = () => {
           </Text>
         </VStack>
       </SimpleGrid>
+      {/* CHECKTODOFIX FALOPA Y TUMBA MANERA DE ARREGLAR EL VH */}
+      <Box height="75vh"></Box>
     </Stack>
   );
 };
