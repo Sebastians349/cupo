@@ -26,9 +26,8 @@ const Bienvenida = () => {
             mt="32"
             boxShadow="base"
             loading="lazy"
-            boxSize="xl"
-            objectFit="cover"
-            src="logo_amarilloXL.png "
+            objectFit="contain"
+            src="logoindex300.png "
             _hover={{ opacity: 0.7 }}
             alt="logo de Cupoghlan"
           />
