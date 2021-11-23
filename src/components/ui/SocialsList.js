@@ -11,7 +11,7 @@ const SocialsList = () => {
           <IconButton
             aria-label="enviar un mail"
             variant="ghost"
-            size="xs"
+            size="md"
             icon={<FaEnvelope />}
           ></IconButton>
         </Link>
@@ -21,7 +21,7 @@ const SocialsList = () => {
           <IconButton
             aria-label="nuestro facebook"
             variant="ghost"
-            size="xs"
+            size="md"
             icon={<FaFacebook />}
           ></IconButton>
         </Link>
@@ -31,7 +31,7 @@ const SocialsList = () => {
           <IconButton
             aria-label="nuestro instagram"
             variant="ghost"
-            size="xs"
+            size="md"
             icon={<FaInstagram />}
           ></IconButton>
         </Link>
@@ -41,7 +41,7 @@ const SocialsList = () => {
           <IconButton
             aria-label="envianos un tuit"
             variant="ghost"
-            size="xs"
+            size="md"
             icon={<FaTwitter />}
           ></IconButton>
         </Link>
